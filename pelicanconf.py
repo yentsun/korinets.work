@@ -2,15 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Maxim Korinets'
-SITENAME = u'Max Korinets Homepage'
+AUTHOR = u'Max Korinets'
+SITENAME = u'Max Korinets Log'
 SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Moscow'
 
-DEFAULT_LANG = u'ru'
+DEFAULT_LANG = u'en'
+
+THEME = '/home/yentsun/Projects/pelican-themes/iris'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
