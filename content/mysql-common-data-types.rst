@@ -1,5 +1,5 @@
-Common data types (MySQL)
-#########################
+Common data types use cases (MySQL)
+###################################
 
 :date: 2010-01-05 10:20
 :modified: 2014-07-15 18:40
@@ -7,12 +7,11 @@ Common data types (MySQL)
 :category: webdev
 :slug: mysql-common-data-types
 :authors: Max Korinets
-:summary: a table of MySQL data types and their use cases
+:abstr: When developing a DB for a new app I always have to 're-decide'
+        which column has what data type. Like what type should be
+        file path field? Or what length VARCHAR should be for storing
+        emails?
 :lang: en
-
-When developing a DB for a new app I always have to 're-decide' which column
-has what data type. Like what type should be `file path` field? Or what length
-``VARCHAR`` should be for storing emails?
 
 Inspired by `a stackoverflow.com question <http://stackoverflow.com/questions/
 354763/common-mysql-fields-and-their-appropriate-data-types#>`_, I'm gathering
