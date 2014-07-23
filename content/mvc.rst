@@ -82,17 +82,17 @@
 поклонения. И как же хорошо, что он и слушатели подняли тему MVC! Все сразу
 встало на свои места.
 
-    Think of the model like this:
-    What are the things our app needs to
-    keep track of, and how do they relate to
-    each other?
+    | Think of the model like this:
+    | What are the things our app needs to
+      keep track of, and how do they relate to
+      each other?
 
 и еще – модель в словах:
 
-    There are projects and each project has
-    messages, to-do lists, and milestones.”
-    “Messages can have comments.”
-    “To-do lists are made up of to-do items.
+    | There are projects and each project has
+      messages, to-do lists, and milestones.”
+    | “Messages can have comments.”
+    | “To-do lists are made up of to-do items.
 
 Довольно грязный дословный перевод:
 модель – это все те вещи, которые ваше приложение должно
