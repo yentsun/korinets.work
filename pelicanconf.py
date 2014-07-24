@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = u'en'
 
-THEME = '/home/yentsun/Projects/pelican-themes/iris'
+THEME = 'themes/iris'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
