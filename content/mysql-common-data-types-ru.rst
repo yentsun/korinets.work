@@ -6,7 +6,6 @@
 :tags: mysql, типы данных
 :category: webdev
 :slug: mysql-common-data-types
-:authors: Max Korinets
 :abstr: Довольно часто при проектировании очередной базы данных, приходится
         заново решать какого типа должен быть тот или иной столбец. Например,
         идентификатор ряда (primary key) – какой тип, INTEGER или INT(8)? А

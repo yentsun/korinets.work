@@ -5,7 +5,6 @@
 :tags: 37signals, CodeIgniter, MVC, symfony
 :category: webdev
 :slug: the-mvc
-:authors: Max Korinets
 :abstr: Знаете ли вы что такое Model-View-Contriller? Если знаете – умеете ли
         правильно понимать и применять эту модель на практике? Нет ли ощущения
         недосказанности и неловкости насчет нее? В этом посте я пытаюсь

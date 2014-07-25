@@ -5,7 +5,6 @@ WYSIWYG от сноба для блондинки
 :tags: WYMeditor, обзор, хвалы
 :category: webdev
 :slug: wysiwyg
-:authors: Max Korinets
 :abstr: Их развелось слишком много. Помню времена когда был tinyMCE и
         FCKeditor (и HTMLArea) и ломать голову, что прикрутить к системе
         управления сайтом не приходилось. Сейчас возникла необходимость выбрать

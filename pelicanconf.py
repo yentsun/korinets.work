@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Max Korinets'
-SITENAME = u'Max Korinets Log'
-SITEURL = ''
+AUTHOR = u'Максим Коринец'
+SITENAME = u"Max's Log"
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = u'ru'
 
 THEME = 'themes/iris'
 
@@ -33,3 +33,5 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+ARTICLE_EXCLUDES = ['partials']
