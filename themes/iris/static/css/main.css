@@ -93,3 +93,4 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);
 #translations{float:right; font-size:90%}
 #abstr{font-style:italic; font-size:110%; color:#333; margin-bottom:2em}
 blockquote{margin-left:2em; color:#777}
+img.align-left{float:left; margin:1.5em; margin-left:0}
