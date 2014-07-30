@@ -5,6 +5,8 @@
         <meta name="description" content="{% block description %}A personal website for Max Korinets, a webdev{% endblock %}">
         <meta name="keywords" content="{% block keywords %}Web development, personal blog{% endblock %}">
         <meta name="author" content="{% if article %}{{article.author}}{% else %}Max Korinets{% endif %}">
+        <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
+
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
@@ -47,10 +49,7 @@
             <hr/>
             <footer id="contentinfo" class="footer">
                 <div>
-                    <a href="{{SITEURL}}">{{AUTHOR}}</a> (2012)
-                </div>
-                <div>
-                    This work is licensed under <a rel="license" href="http://opensource.org/licenses/bsd-3-clause">3 clause BSD</a>. Source code available on <a rel="source code" href="https://github.com/slok/blog">Github</a>
+                    <a href="{{SITEURL}}">{{AUTHOR}}</a> (2014)
                 </div>
                 <div>
                     powered by <a href="http://getpelican.com/">Pelican</a>

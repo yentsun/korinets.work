@@ -8,6 +8,10 @@
 Щедро предоставляю свои основные контакты. Изначально я предпочитаю текстовую
 связь - письмо или сообщение.
 
-:email: max@korinets.name
-:Hangouts: mkorinets@gmail.com
-:телефон: +7 (926) 307-99-75 (WhatsApp positive)
+:|email|: max@korinets.name
+:|hangouts|: mkorinets@gmail.com
+:|whatsapp|: +7 (926) 307-99-75 (WhatsApp positive)
+
+.. |email| image:: ../images/email.png
+.. |hangouts| image:: ../images/hangouts.png
+.. |whatsapp| image:: ../images/whatsapp.png
