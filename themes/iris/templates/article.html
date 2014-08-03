@@ -15,7 +15,7 @@
           {% if article.tags %}
           | теги:
               {% for tag in article.tags %}
-                  <a href="/tag/{{ tag }}/">{{ tag }}</a>
+                  <a href="/tag/{{ tag }}.html">{{ tag }}</a>
                  {% if not loop.last %}, {% endif %}
               {% endfor %}
           {% endif %}
