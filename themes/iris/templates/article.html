@@ -12,8 +12,15 @@
   <footer class="post-info">
       <abbr>
           {{ article.locale_date }}
+          {% if article.tags %}
+          | теги:
+              {% for tag in article.tags %}
+                  <a href="/tag/{{ tag }}/">{{ tag }}</a>
+                 {% if not loop.last %}, {% endif %}
+              {% endfor %}
+          {% endif %}
           {% if article.author %}
-          By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          | автор: <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
           {% endif %}
           {% if article.translations %}|
           {% import 'translations.html' as translations with context %}
