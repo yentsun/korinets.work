@@ -99,3 +99,8 @@ img.align-left{float:left; margin:1.5em; margin-left:0}
 @media only screen and (max-device-width: 480px) {
     .box{margin-top:0}
 }
+.note{background-color:#fcf8e3; padding:1em; color:#c09853;
+      border: 1px solid #fbeed5}
+.note .first{margin-top:0}
+.note .last{margin-bottom:0}
+.admonition-title{font-weight:bold}

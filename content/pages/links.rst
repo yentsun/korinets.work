@@ -20,10 +20,13 @@
 +-------------+-----------------------+-----------------------+---------------+
 | |pocket|    | Pocket                | `mkorinets@gmail.com` | `**`          |
 +-------------+-----------------------+-----------------------+---------------+
+|             | Batllelog             | `MaxKorinets@BL`_     | `***`         |
++-------------+-----------------------+-----------------------+---------------+
 
 .. _`+МаксимКоринец`: https://plus.google.com/u/0/+МаксимКоринец/posts
 .. _`yentsun@last.fm`: http://www.last.fm/user/yentsun
 .. _`MaxKorinets`: http://live.xbox.com/ru-RU/Profile?gamertag=MaxKorinets
+.. _`MaxKorinets@BL`: http://battlelog.battlefield.com/bf4/ru/soldier/MaxKorinets/stats/230901232/xbox360/
 .. _`yentsun@SO`: http://stackoverflow.com/users/216042/yentsun
 .. _`yentsun@github`: https://github.com/yentsun
 
