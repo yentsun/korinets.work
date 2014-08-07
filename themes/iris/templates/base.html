@@ -37,8 +37,16 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <div class="banner"><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></div>
+                <div class="banner">
+                    <a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a>
+                </div>
+
         </header><!-- /#banner -->
+                            <nav id="categories">
+            {% for category, articles in categories %}
+    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+{% endfor %}
+        </nav>
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>

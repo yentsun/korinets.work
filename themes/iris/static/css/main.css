@@ -104,3 +104,8 @@ img.align-left{float:left; margin:1.5em; margin-left:0}
 .note .first{margin-top:0}
 .note .last{margin-bottom:0}
 .admonition-title{font-weight:bold}
+#categories{margin:-.7em auto 2em auto; width:343px; background-color:#004B6B;
+            font-size:130%; padding:.2em}
+#categories li{display:inline; list-style:none; padding:.4em}
+#categories li a{color:#fff; text-decoration:none}
+div.section{margin-top:3em}
