@@ -4,7 +4,7 @@ Common data types use cases (MySQL)
 :date: 2010-01-05 10:20
 :modified: 2014-07-15 18:40
 :tags: mysql, best practices
-:category: webdev
+:category: вебдев
 :slug: mysql-common-data-types
 :authors: Max Korinets
 :abstr: When developing a DB for a new app I always have to 're-decide'

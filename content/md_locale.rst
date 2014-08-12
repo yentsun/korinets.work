@@ -3,7 +3,7 @@
 
 :date: 2007-12-27 15:09
 :tags: mediatemple, locale
-:category: webdev
+:category: вебдев
 :slug: md-locale
 :abstr: Есть небольшой нюанс в переключении на русскую локаль на хостинге
         mediatemple

@@ -95,17 +95,18 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);
 blockquote{margin-left:2em; color:#777}
 img.align-left{float:left; margin:1.5em; margin-left:0}
 
-/* target mobile devices */
-@media only screen and (max-device-width: 480px) {
-    .box{margin-top:0}
-}
 .note{background-color:#fcf8e3; padding:1em; color:#c09853;
       border: 1px solid #fbeed5}
 .note .first{margin-top:0}
 .note .last{margin-bottom:0}
 .admonition-title{font-weight:bold}
 #categories{margin:-.7em auto 2em auto; width:343px; background-color:#004B6B;
-            font-size:130%; padding:.2em}
-#categories li{display:inline; list-style:none; padding:.4em}
+            font-size:26px; padding:5px}
+#categories li{display:inline; list-style:none; padding:4px}
 #categories li a{color:#fff; text-decoration:none}
 div.section{margin-top:3em}
+
+/* target mobile devices */
+@media only screen and (max-device-width: 480px) {
+    .box{margin-top:100px}
+}

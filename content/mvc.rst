@@ -3,7 +3,7 @@
 
 :date: 2010-05-11 10:20
 :tags: 37signals, CodeIgniter, MVC, symfony
-:category: webdev
+:category: вебдев
 :slug: the-mvc
 :abstr: Знаете ли вы что такое Model-View-Controller? Если знаете – умеете ли
         правильно понимать и применять эту модель на практике? Нет ли ощущения

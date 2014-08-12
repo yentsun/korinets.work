@@ -1,7 +1,7 @@
 Whyte Model
 ===========
 
-:date: 2012-09-16 12:02
+:date: 2011-09-16 12:02
 :tags: php, mvc, zend_form
 :category: мои проекты
 :slug: whyte

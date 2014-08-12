@@ -3,7 +3,7 @@
 
 :date: 2008-05-28 11:35
 :tags: modx, ispmanager
-:category: webdev
+:category: вебдев
 :slug: manager-ispmanager-vps
 :abstr: Проблема: вы покупаете VPS-сервер, скажем на расчудесной Агаве, и вам
         в качестве системы управления этим сервером предлагается (в моем случае

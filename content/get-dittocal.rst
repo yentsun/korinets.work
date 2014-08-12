@@ -3,7 +3,7 @@
 
 :date: 2007-12-28 14:08
 :tags: modx, DittoCal
-:category: webdev
+:category: вебдев
 :slug: get-dittocal
 :abstr: Задача: сделать вывод даты из параметров GET DittoCal в заголовок,
         например "Новости за 15 января 2007 года".

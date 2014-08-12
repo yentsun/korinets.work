@@ -3,10 +3,10 @@
     from programmers.profiles import Programmer, OOProgrammer
     from programmers.tools import (Framework, ORM, DBMS, IDE, DataFormat,
                                    TextEditor, OS, TemplateLanguage)
-    from webdevs.profiles import GeneralPurposeWebdev
+    from вебдевs.profiles import GeneralPurposeвебдев
     from global_programmers.db import session
 
-    yentsun = Programmer(OOProgrammer, GeneralPurposeWebdev)
+    yentsun = Programmer(OOProgrammer, GeneralPurposeвебдев)
     yentsun.real_name = 'Max Korinets'
     yentsun.email = 'mkorinets@gmail.com'
     yentsun.bio = ('Developing websites since 1998, mostly solo. I am familiar'
@@ -18,7 +18,7 @@
                    'I switched to Python (considered Ruby also).'
                    'In Python I tried Django and liked it but chose a less coupled '
                    'framework *Pyramid* for daily use. '
-                   '*Note: For such a long webdev career I have suprisingly few '
+                   '*Note: For such a long вебдев career I have suprisingly few '
                    'things to share and to be proud of. The reason is probably in '
                    'lack of time and motivation to perfectly document and put '
                    'projects for public use. Or simply maybe because I am '

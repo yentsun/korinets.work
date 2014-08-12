@@ -15,7 +15,7 @@ Scroll
 .. _TCPDF: http://www.tcpdf.org/
 
 :Язык: Python
-:Репозиторий: https://bitbucket.org/yt_at_work/scroll/
+:Репозиторий: https://bitbucket.org/yentsun/scroll
 
 Генератор работает на базе:
 
