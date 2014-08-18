@@ -46,4 +46,7 @@ status            TINYINT(1)       1 – published, 0 – unpublished, …
                                    values
 ================  ===============  ============================================
 
-Under continuous revision...
+.. note::
+   Under continuous revision. You can see the `history of commits to this page
+   at Bitbucket <https://bitbucket.org/yentsun/yentsun.com/history-node/HEAD/
+   content/mysql-common-data-types.rst?at=master>`_.
