@@ -15,7 +15,7 @@ Real Estate Utils
 проектов:
 
 * Hydra
-* Scroll
+* `Scroll <{filename}/scroll.rst>`_
 
 :Язык: Python
 :Репозиторий: https://bitbucket.org/yentsun/real_etsate_utils/src
