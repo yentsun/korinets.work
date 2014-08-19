@@ -2,7 +2,6 @@ Common data types use cases (MySQL)
 ###################################
 
 :date: 2010-01-05 10:20
-:modified: 2014-07-15 18:40
 :tags: mysql, best practices
 :category: вебдев
 :slug: mysql-common-data-types

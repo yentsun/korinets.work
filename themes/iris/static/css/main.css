@@ -42,9 +42,9 @@ blockquote   { margin: 0; font-style: italic; color: #444; }
 .twitter li  { margin: 15px 0; line-height: 1.2; font-size: 15px; }
 .twitter li:before { content: "♯"; padding-left: 4px; }
 .twitter .meta, .twitter .meta a { color: #888; font-size: 13px; }
-table        { border: 1px solid black; border-collapse: collapse;
-               margin: 15px 0; }
-td, th       { border: 1px solid black; padding: 4px 10px;
+table        {border-collapse: collapse; border:1px solid #444;
+               margin: 2em 0; font-family:sans-serif}
+td, th       { border: 1px dotted #444444; padding: 4px 10px;
                text-align: left; }
 th           { background: #eee; font-weight: normal; }
 
@@ -95,16 +95,18 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);
 blockquote{margin-left:2em; color:#777}
 img.align-left{float:left; margin:1.5em; margin-left:0}
 
-.note{background-color:#fcf8e3; padding:1em; color:#c09853;
-      border: 1px solid #fbeed5}
-.note .first{margin-top:0}
-.note .last{margin-bottom:0}
-.admonition-title{font-weight:bold}
+.note{background-color:#e7f2fa; color: #404040;}
+.note .admonition-title{margin-top:0; background-color: rgba(95, 147, 189, 0.95);
+                        color:#fff; padding:.3em 1em; font-family:sans-serif}
+.note .admonition-title:before{content:"\f05a\0000a0"; font-family:"FontAwesome";}
+.note .last{margin-bottom:0; padding:.5em 1em 1em 1em}
 #categories{margin:-.7em auto 2em auto; width:343px; background-color:#004B6B;
             font-size:26px; padding:5px}
 #categories li{display:inline; list-style:none; padding:4px}
 #categories li a{color:#fff; text-decoration:none}
 div.section{margin-top:3em}
+a.external:after{font-family:"FontAwesome"; content:"\0000a0\f08e";
+                  font-size:70%}
 
 /* target mobile devices */
 @media only screen and (max-device-width: 480px) {

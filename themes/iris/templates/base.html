@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="{% block lang %}{{DEFAULT_LANG}}{% endblock %}">
 <head>
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% block title %}Max's Log - персональный блог Максима Коринца{% endblock %}</title>
         <meta name="description" content="{% block description %}
-                        Персональный сайт Максима Коринца, веб-разработчика
+                        Персональный сайт Максима Коринца, еще одного
+                        веб-разработчика
                         {% endblock %}">
         <meta name="keywords" content="{% block keywords %}веб-разработка, персональный блог{% endblock %}">
         <meta name="author" content="{% if article %}{{article.author}}{% else %}Максим Коринец{% endif %}">
         <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
 
         <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Inconsolata"
+              rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door"
+              rel="stylesheet" type="text/css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+              rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
