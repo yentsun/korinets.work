@@ -3,10 +3,10 @@
     from programmers.profiles import Programmer, OOProgrammer
     from programmers.tools import (Framework, ORM, DBMS, IDE, DataFormat,
                                    TextEditor, OS, TemplateLanguage)
-    from вебдевs.profiles import GeneralPurposeвебдев
+    from webdev.profiles import GeneralPurposeWebdev
     from global_programmers.db import session
 
-    yentsun = Programmer(OOProgrammer, GeneralPurposeвебдев)
+    yentsun = Programmer(OOProgrammer, GeneralPurposeWebdev)
     yentsun.real_name = 'Max Korinets'
     yentsun.email = 'mkorinets@gmail.com'
     yentsun.bio = ('Developing websites since 1998, mostly solo. I am familiar'
