@@ -5,14 +5,11 @@
 :slug: contacts
 :lang: ru
 
-Щедро предоставляю свои основные контакты.
+E-mail, мессенджер, телефон и т. д.
 
 :|email|: max@korinets.name
 :|hangouts|: mkorinets@gmail.com
 :|whatsapp|: +7 (926) 307-99-75
-
-.. note:: Буду признателен за текстовую связь - письмо или сообщение вместо
-          звонка.
 
 .. |email| image:: ../images/email.png
 .. |hangouts| image:: ../images/hangouts.png

@@ -107,6 +107,7 @@ img.align-left{float:left; margin:1.5em; margin-left:0}
 div.section{margin-top:3em}
 a.external:after{font-family:"FontAwesome"; content:"\0000a0\0000a0\f08e";
                   font-size:70%; text-decoration:none}
+.align-center{margin:0 auto; display:block}
 
 /* target mobile devices */
 @media only screen and (max-device-width: 480px) {
