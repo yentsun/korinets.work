@@ -21,21 +21,24 @@ common-mysql-fields-and-their-appropriate-data-types#>`_), поэтому реш
 ======================  ======================  ===============================
 Столбец                 Тип данных              Комментарий
 ======================  ======================  ===============================
-идентификатор           INTEGER                 AUTO_INCREMENT, UNSIGNED
+идентификатор           INTEGER                 `AUTO_INCREMENT`, `UNSIGNED`
+полное имя              VARCHAR(70)
 заголовок               VARCHAR(255)
 описание                TINYTEXT                часто недостаточен из-за
                                                 ограничений, можно использовать
-                                                TEXT
+                                                `TEXT`
 текст поста             TEXT
 email                   VARCHAR(254)
 'соль'                  CHAR(X)                 строка случайных символов,
                                                 как правило фиксированной
                                                 длины
 хэш (md5)               CHAR(32)
+пол                     TINYINT                 `UNSIGNED`
 телефон                 VARCHAR(20)
+почтовый индекс         CHAR(6)
 файл (путь)             VARCHAR(255)
-рейтинг (5*)            DECIMAL(3,2)            UNSIGNED
-цена                    DECIMAL(7,2)            UNSIGNED
+рейтинг (5*)            DECIMAL(3,2)            `UNSIGNED`
+цена                    DECIMAL(7,2)            `UNSIGNED`
 дата (создания)         DATE/DATETIME           как правило
                                                 выводится как дата создания
                                                 поста/новости (фронтенд)
