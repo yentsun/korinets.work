@@ -11,7 +11,7 @@
   </header>
   <footer class="post-info">
       <abbr>
-          {{ article.locale_date }}
+          <i class="fa fa-calendar-o"></i> {{ article.locale_date }}
           {% if article.tags %}
           | теги:
               {% for tag in article.tags %}
@@ -21,7 +21,7 @@
               {% endfor %}
           {% endif %}
           {% if article.author %}
-          | автор: <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          |  автор: <i class="fa fa-user"></i>  <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
           {% endif %}
           {% if article.translations %}|
           {% import 'translations.html' as translations with context %}
