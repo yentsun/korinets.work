@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{% block lang %}{{DEFAULT_LANG}}{% endblock %}">
 <head>
-        <title>{% block title %}Max's Log - персональный блог Максима Коринца{% endblock %}</title>
+        <title>{% block title %}{{SITENAME}}{% endblock %}</title>
         <meta name="description" content="{% block description %}
                         Персональный сайт Максима Коринца, еще одного
                         веб-разработчика
@@ -43,7 +43,7 @@
 <body id="index" class="home">
         <header id="banner" class="body">
                 <div class="banner">
-                    <a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a>
+                    <a href="{{ SITEURL }}">Max's log <strong>{{ SITESUBTITLE }}</strong></a>
                 </div>
 
         </header><!-- /#banner -->
