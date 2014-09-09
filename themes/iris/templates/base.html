@@ -15,13 +15,13 @@
               rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door"
               rel="stylesheet" type="text/css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
               rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css" type="text/css" />
     <meta charset="utf-8" />
 
     {% if FEED_RSS %}
@@ -37,7 +37,6 @@
         ga('create', 'UA-53332840-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
 
 <body id="index" class="home">
@@ -92,5 +91,8 @@
                 </div>
             </footer><!-- /#contentinfo -->
         </div>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="/theme/js/link_icons.js"></script>
 </body>
 </html>
