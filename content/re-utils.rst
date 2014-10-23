@@ -14,7 +14,7 @@ Real Estate Utils
 Он стал своего рода ядром, на котором работает несколько других смежных
 проектов:
 
-* Hydra
+* `Hydra <{filename}/hydra.rst>`_
 * `Scroll <{filename}/scroll.rst>`_
 
 :Язык: Python
