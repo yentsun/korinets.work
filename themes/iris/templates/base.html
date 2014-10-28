@@ -42,29 +42,28 @@
 <body id="index" class="home">
         <header id="banner" class="body">
                 <div class="banner">
-                    <a href="{{ SITEURL }}">Max's log <strong>{{ SITESUBTITLE }}</strong></a>
+                    <a href="{{ SITEURL }}">Max's [a lazy] log <strong>{{ SITESUBTITLE }}</strong></a>
                 </div>
 
         </header><!-- /#banner -->
-                            <nav id="categories">
-            {% for category, articles in categories %}
-    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
-{% endfor %}
+         <nav id="categories">
+             {% if article or articles_page %}
+             <span>блог</span>
+             {% else %}
+             <a href="/">блог</a>
+             {% endif %}
+             <span class="bullet">⚫</span>
+           {% for p in PAGES|sort(attribute='sort_order') %}
+            {% if p != page %}
+            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+            {% else %}
+             <span>{{ p.title }}</span>
+            {% endif %}
+             {% if p != PAGES|sort(attribute='sort_order')|last %}
+             <span class="bullet">⚫</span>
+             {% endif %}
+          {% endfor %}
         </nav>
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in PAGES|sort(attribute='sort_order') %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        {% else %}
-          {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-          {% endfor %}
-        {% endif %}
-        </ul></nav><!-- /#menu -->
         <div class="box">
             {% block content %}
             {% endblock %}

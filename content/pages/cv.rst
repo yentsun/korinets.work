@@ -32,7 +32,7 @@ email: mkorinets@gmail.com
     + python: Pyramid, Django, sqlalchemy, Mako, PEP8
     + php: Zend Framework, CodeIgniter;
 
-  * архитектура баз данных (MySQL, SQLite, XML, JSON)
+  * архитектура баз данных (MySQL, SQLite, ZODB, XML, JSON)
   * графический дизайн (Photoshop, Illustrator, Inkscape)
   * html-верстка (стандарты W3C, JavaScript, jQuery, Twitter Bootstrap)
   * организация рабочего потока и инвентаря (Basecamp, Redmine, GitHub),
@@ -45,8 +45,8 @@ email: mkorinets@gmail.com
 - ``профессия == хобби``
 - повышенное внимание к орфографии (знаю когда *тся* и *ться* и когда
   *"вы"* с большой буквы)
-- в совершенстве владею английским языком (регулярное чтение новостей
-  и документации в оригинале)
+- владею английским языком (регулярное чтение литературы, новостей и
+  документации в оригинале)
 
 
 Достижения
