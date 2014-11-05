@@ -101,9 +101,10 @@ CodeIgniter и в итоге пришел к Zend Framework. Солидност�
 Инструменты
 ===========
 
-* Python, Pyramid, Flask, Scrapy, Pelican, Sphinx, Fabric, Mako, Jinja
-* PHP, Zend Framework
+* Python, Pyramid, Django, Flask, Scrapy, Pelican, Sphinx, Fabric, Mako, Jinja
+* *PHP, Zend Framework* (в прошлом)
 * SQLite, MySQL, ZODB
+* jQuery, HTML5, CSS3, Bootstrap
 * JSON, XML, CSV
 * git
 * PyCharm, Vim, PEP8
