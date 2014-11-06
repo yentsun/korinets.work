@@ -46,7 +46,7 @@
                 </div>
 
         </header><!-- /#banner -->
-         <nav id="categories">
+         <nav id="main">
              {% if article or articles_page %}
              <span>блог</span>
              {% else %}
@@ -64,13 +64,31 @@
              {% endif %}
           {% endfor %}
         </nav>
+
+        {% if article or articles_page %}
+        <nav id="categories">
+            {% for cat, articles in categories|sort(reverse=True) %}
+            {% if cat != category %}
+            <a href="{{ SITEURL }}/{{cat.url}}">
+                {{cat}} <small>({{articles|length}})</small>
+            </a>
+            {% else %}
+            <span>{{cat}} <small>({{articles|length}})</small></span>
+            {% endif %}
+            {% if (cat, articles) != categories|sort(reverse=True)|last %}
+                <span class="bullet">⚫</span>
+            {% endif %}
+            {% endfor %}
+        </nav>
+        {% endif %}
+
         <div class="box">
             {% block content %}
             {% endblock %}
             <hr/>
             <footer id="contentinfo" class="footer">
                 <div>
-                    <a href="{{SITEURL}}">{{AUTHOR}}</a> (2014)
+                    &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2014
                 </div>
                 <div>
                     работает на <a href="http://getpelican.com/">Pelican</a>

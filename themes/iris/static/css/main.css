@@ -75,6 +75,7 @@ div.navigation {
 .social a:hover {color: #004B6B;}
 
 /*posts*/
+#post-list{margin-left:0}
 .posts ol, .posts ul, .posts li  {list-style-type: none; padding: 0;}
 .posts li {padding-bottom: 30px;}
 .post h2 { font-size: 50px;}
@@ -101,15 +102,17 @@ img.align-left{float:left; margin:1.5em; margin-left:0}
 .note .admonition-title:before{content:"\f05a\0000a0";
                                font-family:"FontAwesome";}
 .note .last{margin-bottom:0; padding:.5em 1em 1em 1em}
-#categories{margin:.3em auto 2em auto; width:679px; text-align:center;
+#main,
+#categories{margin:.3em auto 0 auto; width:740px; text-align:center;
             font-size:22px; font-family: "Arial", sans-serif;
             text-transform:lowercase; border-top:2px dotted #004B6B;
             border-bottom:2px dotted #004B6B;
             padding:.3em 0 .2em 0;}
-#categories a{text-decoration:none}
-#categories span{color:#777}
-#categories *:last-child{margin-right:0}
-#categories .bullet{margin:0 10px; color:#004B6B}
+#categories{border:none; margin-top:.5em; margin-bottom:2em; font-size:90%}
+#main a, #categories a{text-decoration:none}
+#main span, #categories span{color:#777}
+#main *:last-child{margin-right:0}
+#main .bullet{margin:0 2%; color:#004B6B}
 div.section{margin-top:3em}
 .align-center{margin:0 auto; display:block}
 i.fa{font-size:80%}
