@@ -11,7 +11,7 @@ foto-event.ru
 .. image:: images/index-inner.jpg
    :alt: логотип foto-event.ru
 
-:Тех. стэк: Python, Pyramid, Flickr API, Google API, SQLite, HTML, jQuery
+:Тех. стек: Python, Pyramid, Flickr API, Google API, SQLite, HTML, jQuery
 :Время: 2 месяца
 :Репозиторий: недоступен
 :Статус: онлайн: http://foto-event.ru/photosets.html
@@ -22,4 +22,4 @@ foto-event.ru
 Реализовано:
 
 * каталог фотоальбомов с Flickr API
-* синдикация постов от Google Plus API
+* синдикация постов от Google+ API

@@ -11,7 +11,7 @@
 .. image:: images/modaiola_logo.gif
    :alt: логотип modaiola
 
-:Тех. стэк: PHP, Zend Framework, `Whyte`_, MySQL, Lucene, HTML, jQuery
+:Тех. стек: PHP, Zend Framework, `Whyte`_, MySQL, Lucene, HTML, jQuery
 :Время: 1 год
 :Репозиторий: недоступен
 :Статус: онлайн: http://modaiola.com

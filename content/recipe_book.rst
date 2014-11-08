@@ -15,7 +15,7 @@ Recipe Book (Kook)
 .. image:: images/kook_logo.png
    :alt: логотип
 
-:Тех. стэк: python 2.7, pyramid, sqlalchemy, colander, mako, json
+:Тех. стек: python 2.7, pyramid, sqlalchemy, colander, mako, json
 :Репозиторий: https://bitbucket.org/yentsun/recipe-book
 :Статус: заморожен на неопределенный срок
 

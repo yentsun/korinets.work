@@ -11,7 +11,7 @@
 .. image:: images/kk_logo.png
    :alt: логотип "Первая леди"
 
-:Тех. стэк: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
+:Тех. стек: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
 :Время: ½ года
 :Репозиторий: https://bitbucket.org/yentsun/kk
 :Статус: неизвестен

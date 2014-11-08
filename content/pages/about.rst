@@ -8,7 +8,7 @@
 
 .. image:: ../images/049-bw.jpg
    :alt: Фото
-   :width: 120
+   :width: 127
    :align: left
 
 Меня зовут Максим Коринец, на момент написания этого текста мне 35 лет и с 18
@@ -102,13 +102,13 @@ CodeIgniter и в итоге пришел к Zend Framework. Солидност�
 ===========
 
 * Python, Pyramid, Django, Flask, Scrapy, Pelican, Sphinx, Fabric, Mako, Jinja
-* *PHP, Zend Framework* (в прошлом)
+* PHP, Zend Framework, Slim, Idiorm, Paris
 * SQLite, MySQL, ZODB
 * jQuery, HTML5, CSS3, Bootstrap
 * JSON, XML, CSV
 * git
-* PyCharm, Vim, PEP8
-* reStructured Text
+* PyCharm, PHPStorm, Vim, PEP8
+* Markdown, reStructured Text
 * Amazon Web Services
 * bitbucket, github
 * Ubuntu, Dell Inspiron 3737

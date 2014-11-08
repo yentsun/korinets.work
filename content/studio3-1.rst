@@ -11,7 +11,7 @@ Studio 3:1
 .. image:: images/studio3-1_logo.png
    :alt: логотип Studio 3:1
 
-:Тех. стэк: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
+:Тех. стек: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
 :Время: ½ года
 :Репозиторий: https://bitbucket.org/yentsun/studio3-1
 :Статус: неизвестен

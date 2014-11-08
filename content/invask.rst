@@ -12,7 +12,7 @@
 .. image:: images/invask_logo.png
    :alt: логотип инваск
 
-:Тех. стэк: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
+:Тех. стек: PHP, Zend Framework, `Whyte`_, MySQL, HTML, jQuery
 :Время: ½ года
 :Репозиторий: недоступен
 :Статус: онлайн: http://invask.ru/

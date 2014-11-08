@@ -17,7 +17,7 @@ Milk Price Report
 .. image:: images/milkpricelogo-mid.png
    :alt: логотип
 
-:Тех. стэк: Python, ZODB, YAML, numpy, matplotlib
+:Тех. стек: Python, ZODB, YAML, numpy, matplotlib
 :Репозиторий: https://bitbucket.org/yentsun/milk-price-report
 
 Средняя цена расчитывается с помощью `медианы`_ дабы исключить влияние
