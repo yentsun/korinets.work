@@ -119,6 +119,7 @@ i.fa{font-size:80%}
 span.price:after{content:"\0000a0\f158"; font-family:"FontAwesome";
                   font-weight:normal}
 span.price{font-family:sans-serif; color:green; font-weight:bold}
+ul.simple li{margin-bottom:.5em}
 
 /* target mobile devices */
 @media only screen and (max-device-width: 480px) {

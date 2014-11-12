@@ -112,7 +112,7 @@ Plex for Android + Chromecast
    :alt: Plex for Android
    :width: 620
 
-Достаточно недавно появилась HDMI-приставка от Google - Chromecast. Она
+Достаточно недавно появилась HDMI-приставка от Google - Chromecast_. Она
 позволяет проигрывать на экране (любом, где есть HDMI) видео-поток из
 совместимых с ней приложений. Само собой очень скоро в приложении Plex для
 Андроида появилась возможность транслировать видео через Chromecast. Теперь вы
@@ -137,3 +137,5 @@ Plex for Android + Chromecast
 
 Попробуйте `Plex <https://plex.tv/>`_ сами! Он есть для практически всех
 известных платформ.
+
+.. _Chromecast: https://www.google.ru/chrome/devices/chromecast/
