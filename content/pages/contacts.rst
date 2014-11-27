@@ -10,6 +10,7 @@ E-mail, мессенджер, телефон и т. д.
 :|email|: max@korinets.name
 :|hangouts|: mkorinets@gmail.com
 :|whatsapp|: +7 (926) 307-99-75
+:Skype: max.korinets
 
 .. |email| image:: ../images/email.png
 .. |hangouts| image:: ../images/hangouts.png
