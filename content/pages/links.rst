@@ -25,11 +25,11 @@
 +-----------------------+-------------------------+---------------+
 | Last FM               | `yentsun@last.fm`_      | `***`         |
 +-----------------------+-------------------------+---------------+
-| Xbox Live             | Tag: ``MaxKorinets``    | `***`         |
+| Xbox Live             | Tag: ``MaxKorinets``    | `*`           |
 +-----------------------+-------------------------+---------------+
 | Pocket                | ``mkorinets@gmail.com`` | `*`           |
 +-----------------------+-------------------------+---------------+
-| Steam                 | `mkorinets@steam`_      | `*`           |
+| Steam                 | `76561198027613660`_    | `**`          |
 +-----------------------+-------------------------+---------------+
 | Batllelog             | `MaxKorinets@BL`_       | `*`           |
 +-----------------------+-------------------------+---------------+
@@ -40,4 +40,4 @@
 .. _`yentsun@SO`: http://stackoverflow.com/users/216042/yentsun
 .. _`yentsun@github`: https://github.com/yentsun
 .. _`yentsun@bitbucket`: https://bitbucket.org/yentsun
-.. _mkorinets@steam: http://steamcommunity.com/profiles/76561198027613660
+.. _76561198027613660: http://steamcommunity.com/profiles/76561198027613660
