@@ -1,1 +1,1 @@
-This is a round up blog and website for Max Korinets, an unknown webdev.
+This is a round up blog and website for Max Korinets, yet another webdev.
