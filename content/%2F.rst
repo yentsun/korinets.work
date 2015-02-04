@@ -2,7 +2,7 @@
 ================================
 
 :date: 2014-11-12 10:29
-:tags: python, wcgi, zodb, pyramid, traversal
+:tags: python, wsgi, zodb, pyramid, traversal
 :category: вебдев
 :slug: forward_slash_wsgi
 :abstr: Если так случилось, что идентификаторы в вашем приложении содержат

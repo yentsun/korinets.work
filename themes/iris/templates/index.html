@@ -1,5 +1,12 @@
 {% extends "base.html" %}
-{% block content %}        
+{% block title %}
+    {% if articles_page.number > 1 %}
+    Страница {{articles_page.number}} - {{super()}}
+    {% else %}
+    {{super()}}
+    {% endif %}
+{% endblock %}
+{% block content %}
 <section id="content">
 <div class="posts">
     <ol id="post-list">
