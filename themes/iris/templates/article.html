@@ -3,15 +3,18 @@
 {% block title %}{{article.title}} - {{SITENAME}}{% endblock %}
 {% block keywords %}{{article.tags|join(', ')}}{% endblock %}
 {% block content %}
-<section id="content" class="body">
+<section itemscope itemtype="http://schema.org/Article" id="content" class="body">
   <header class="post">
-    <h2 class="entry-title">
+    <h2 itemprop="name" class="entry-title">
       {{ article.title }}
     </h2>
   </header>
   <footer class="post-info">
       <abbr>
-          <i class="fa fa-calendar-o"></i> {{ article.locale_date }}
+          <i class="fa fa-calendar-o"></i>
+          <span itemprop="datePublished" content="{{ article.date }}">
+              {{ article.locale_date }}
+          </span>
           {% if article.tags %}
           | теги:
               {% for tag in article.tags %}
@@ -21,7 +24,11 @@
               {% endfor %}
           {% endif %}
           {% if article.author %}
-          |  автор: <i class="fa fa-user"></i>  <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          |  автор: <i class="fa fa-user"></i>
+          <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ article.author }}</span></span>
+          </a>
           {% endif %}
           {% if article.translations %}|
           {% import 'translations.html' as translations with context %}
@@ -30,8 +37,12 @@
       </abbr>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p id="abstr">{% block description %}{{article.abstr}}{% endblock %}</p>
+    <p itemprop="articleSection" id="abstr">
+        {% block description %}{{article.abstr}}{% endblock %}
+    </p>
+    <div itemprop="articleBody">
     {{ article.content }}
+    </div>
   </div><!-- /.entry-content -->
 {% include 'disqus.html' %}
 </section>
