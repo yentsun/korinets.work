@@ -46,6 +46,8 @@ email: mkorinets@gmail.com
 Достижения
 ----------
 
+- QuizUp: `3-е место`_ в России в разделе Computer Science
+- стал "контрибутором" в `репозиторий pyramid_tm`_ (транзакции для Pyramid)
 - разработал программный продукт (`Hydra`_), сделавший качественный скачок в
   работе студии `ART3D Graphics`_
 - разработал гибкую систему "нейминга" ресурсов `ShortHand`_
@@ -108,3 +110,8 @@ email: mkorinets@gmail.com
 .. _Whyte Model: {filename}/whyte.rst
 .. _Hydra: {filename}/hydra.rst
 .. _Shorthand: http://art3d.ru/docs/shorthand.html
+.. _3-е место: https://www.quizup.com/en/topics/computer-science/2015/1?scope=
+               country&country=RU&player_id=529304157232955477&banner=lb:
+               computer-science:RU:month:1:2015:3&position=3&source=share
+.. _репозиторий pyramid_tm: https://github.com/Pylons/pyramid_tm
+                            /graphs/contributors

@@ -5,7 +5,8 @@
 :tags: php, zend_framework, mysql, html, jquery
 :category: мои проекты
 :slug: kk
-:abstr: Сайт конкурса красоты "Первая леди".
+:abstr: Сайт конкурса красоты "Первая леди" для участниц из Москвы и других
+        городов России. На сколько мне известно, так и не был запущен.
 :lang: ru
 
 .. image:: images/kk_logo.png
