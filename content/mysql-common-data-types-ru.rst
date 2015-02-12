@@ -59,3 +59,9 @@ email                   VARCHAR(254)
 **UPD3**:  поля varchar(n) можно заменить на аналогичные char(n) – это займет
 больше места, однако, из-за фиксированной длины char скорость выдачи данных
 увеличится.
+
+
+.. note::
+   Эта статья постоянно обновляется (`история коммитов на
+   Github <https://github.com/yentsun/korinets.name/commits/master/content/
+   mysql-common-data-types-ru.rst>`_).
