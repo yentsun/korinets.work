@@ -2,6 +2,7 @@
 <html lang="{% block lang %}{{DEFAULT_LANG}}{% endblock %}">
 <head>
         <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+        {% block noindex %}{% endblock %}
         <meta name="description" content="{% block description %}
                         Персональный сайт Максима Коринца, еще одного
                         веб-разработчика
