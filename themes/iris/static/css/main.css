@@ -116,7 +116,7 @@ img.align-left{float:left; margin:1.5em; margin-left:0}
 div.section{margin-top:3em}
 .align-center{margin:0 auto; display:block}
 i.fa{font-size:80%}
-span.price:after{content:"\0000a0\f158"; font-family:"FontAwesome";
+span.price:before{content:"\f155\0000a0"; font-family:"FontAwesome";
                   font-weight:normal}
 span.price{font-family:sans-serif; color:green; font-weight:bold}
 ul.simple li{margin-bottom:.5em}
