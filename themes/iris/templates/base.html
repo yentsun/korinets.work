@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="{% block lang %}{{DEFAULT_LANG}}{% endblock %}">
 <head>
-        <title>{% block title %}{{SITENAME}}{% endblock %}</title>
-        {% block noindex %}{% endblock %}
-        <meta name="description" content="{% block description %}
+    <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+    {% block noindex %}{% endblock %}
+    <meta name="description" content="{% block description %}
                         Персональный сайт Максима Коринца, еще одного
                         веб-разработчика
                         {% endblock %}">
-        <meta name="keywords" content="{% block keywords %}веб-разработка, персональный блог{% endblock %}">
-        <meta name="author" content="{% if article %}{{article.author}}{% else %}Максим Коринец{% endif %}">
-        <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
+    <meta name="keywords" content="{% block keywords %}веб-разработка, персональный блог{% endblock %}">
+    <meta name="author" content="{% if article %}{{article.author}}{% else %}Максим Коринец{% endif %}">
+    <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
 
-        <!-- Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Inconsolata"
-              rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door"
-              rel="stylesheet" type="text/css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-              rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door"
+          rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css" type="text/css" />
     <meta charset="utf-8" />
 
     {% if FEED_RSS %}
@@ -41,75 +37,75 @@
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <div class="banner">
-                    <a href="{{ SITEURL }}">Max's [a lazy] log <strong>{{ SITESUBTITLE }}</strong></a>
-                </div>
+<header id="banner" class="body">
+    <div class="banner">
+        <a href="{{ SITEURL }}">Max's [a lazy] log <strong>{{ SITESUBTITLE }}</strong></a>
+    </div>
 
-        </header><!-- /#banner -->
-         <nav id="main">
-             {% if article or articles_page %}
-             <span>блог</span>
-             {% else %}
-             <a href="/">блог</a>
-             {% endif %}
-             <span class="bullet">⚫</span>
-           {% for p in PAGES|sort(attribute='sort_order') %}
-            {% if p != page %}
-            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-            {% else %}
-             <span>{{ p.title }}</span>
-            {% endif %}
-             {% if p != PAGES|sort(attribute='sort_order')|last %}
-             <span class="bullet">⚫</span>
-             {% endif %}
-          {% endfor %}
-        </nav>
+</header><!-- /#banner -->
+<nav id="main">
+    {% if article or articles_page %}
+    <span>блог</span>
+    {% else %}
+    <a href="/">блог</a>
+    {% endif %}
+    <span class="bullet">⚫</span>
+    {% for p in PAGES|sort(attribute='sort_order') %}
+    {% if p != page %}
+    <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+    {% else %}
+    <span>{{ p.title }}</span>
+    {% endif %}
+    {% if p != PAGES|sort(attribute='sort_order')|last %}
+    <span class="bullet">⚫</span>
+    {% endif %}
+    {% endfor %}
+</nav>
 
-        {% if article or articles_page %}
-        <nav id="categories">
-            {% for cat, articles in categories|sort(reverse=True) %}
-            {% if cat != category %}
-            <a href="{{ SITEURL }}/{{cat.url}}">
-                {{cat}} <small>({{articles|length}})</small>
-            </a>
-            {% else %}
-            <span>{{cat}} <small>({{articles|length}})</small></span>
-            {% endif %}
-            {% if (cat, articles) != categories|sort(reverse=True)|last %}
-                <span class="bullet">⚫</span>
-            {% endif %}
-            {% endfor %}
-        </nav>
-        {% endif %}
-        <div class="box">
-            {% block content %}
-            {% endblock %}
-            <hr/>
-            <footer id="contentinfo" class="footer">
-                <div>
-                    &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2014
-                </div>
-                <div>
-                    работает на <a href="http://getpelican.com/">Pelican</a>
-                    и <a href="http://python.org">Python</a>.
-                    Оформление от <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a>
-                </div>
-                <div>
-                    Шрифты <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">заголовка</a> и <a href="http://www.google.com/webfonts/specimen/Inconsolata">кода</a> от Google fonts
-                </div>
-                <div class="social">
-                    {% for name, link in SOCIAL %}
-                        <a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a>
-                    {% endfor %}
-                    {% if EMAIL%}
-                        <a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a>
-                    {% endif %}
-                </div>
-            </footer><!-- /#contentinfo -->
+{% if article or articles_page %}
+<nav id="categories">
+    {% for cat, articles in categories|sort(reverse=True) %}
+    {% if cat != category %}
+    <a href="{{ SITEURL }}/{{cat.url}}">
+        {{cat}} <small>({{articles|length}})</small>
+    </a>
+    {% else %}
+    <span>{{cat}} <small>({{articles|length}})</small></span>
+    {% endif %}
+    {% if (cat, articles) != categories|sort(reverse=True)|last %}
+    <span class="bullet">⚫</span>
+    {% endif %}
+    {% endfor %}
+</nav>
+{% endif %}
+<div class="box">
+    {% block content %}
+    {% endblock %}
+    <hr/>
+    <footer id="contentinfo" class="footer">
+        <div>
+            &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2014
         </div>
-    <script type="text/javascript"
-            src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script type="text/javascript" src="/theme/js/link_icons.js"></script>
+        <div>
+            работает на <a href="http://getpelican.com/">Pelican</a>
+            и <a href="http://python.org">Python</a>.
+            Оформление от <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a>
+        </div>
+        <div>
+            Шрифты <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">заголовка</a> и <a href="http://www.google.com/webfonts/specimen/Inconsolata">кода</a> от Google fonts
+        </div>
+        <div class="social">
+            {% for name, link in SOCIAL %}
+            <a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a>
+            {% endfor %}
+            {% if EMAIL%}
+            <a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a>
+            {% endif %}
+        </div>
+    </footer><!-- /#contentinfo -->
+</div>
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="/theme/js/link_icons.js"></script>
 </body>
 </html>
