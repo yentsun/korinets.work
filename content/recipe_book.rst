@@ -16,7 +16,7 @@ Recipe Book (Kook)
    :alt: логотип
 
 :Тех. стек: python 2.7, pyramid, sqlalchemy, colander, mako, json
-:Репозиторий: https://bitbucket.org/yentsun/recipe-book
+:Репозиторий: https://github.com/yentsun/recipe-book
 :Статус: заморожен на неопределенный срок
 
 Этот проект предположительно должен работать в паре с моим
