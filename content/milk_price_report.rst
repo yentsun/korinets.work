@@ -34,6 +34,6 @@ Milk Price Report
    :alt: Products retail price, Moscow
 
 .. note:: Проект прекратил отдельное существование и стал
-          основой сервиса `food-price.net <http://food-price.net>`_
+          основой сервиса `food-price.net <{filename}/price_watch.rst>`_.
 
 .. _`медианы`: https://ru.wikipedia.org/wiki/Медиана_(статистика)
