@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}
     {% if articles_page.number > 1 %}
-    Страница {{articles_page.number}} - {{super()}}
+    Page {{articles_page.number}} - {{super()}}
     {% else %}
     {{super()}}
     {% endif %}
@@ -23,7 +23,7 @@
                     <abbr>
                       <i class="fa fa-calendar-o"></i> {{ article.locale_date }}
                       {% if article.author %}
-                         | автор: <i class="fa fa-user"></i> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+                         | author: <i class="fa fa-user"></i> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
                       {% endif %}  
                     </abbr>
                     <div class="entry-summary"> {{ article.abstr }}

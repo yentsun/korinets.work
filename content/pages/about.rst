@@ -1,134 +1,113 @@
-======
-О себе
-======
+=====
+About
+=====
 
 :sort_order: 1
-:lang: ru
+:lang: en
 :slug: about
 
 .. image:: ../images/049-bw.jpg
-   :alt: Фото
+   :alt: My photo
    :width: 127
    :align: left
 
-Меня зовут Максим Коринец, на момент написания этого текста мне 35 лет и с 18
-лет вся моя работа и большинство мыслей связаны с интернетом. Я люблю четкость,
-структурированность и порядок, а также автоматизацию всяких рутинных процессов.
-Я перфекционист, у меня всегда все несовершенно и я бесконечно довожу вещи до
-идеала (пока есть мотивация).
+My name is Max Korinets, 36 (to 2015) and I am a World Wide Web fan since my 18.
+I like clarity, order and straightforward approach. I also tend to automate
+things and remove human factor. Being a perfectionist, I don't take things
+seriously until they're perfect (i. e. never) though I endlessly try to make
+them such.
 
-Я вырос в семье дизайнера и экономиста, учился в художественной школе, получил
-немного музыкального образованиия. С детства увлекался фотографией,
-компьютерами, играми, английским языком.
+I was raised in a family of a graphic designer and an economist, attended an
+art school and got some musical education from my grandfather. As a child I
+was interested in photography, computers and games.
 
-.. contents:: Содержание:
-
-
-Профессиональная история
-========================
-
-Познакомился со всемирной сетью в 1996 году на выставке Internet Expo в
-Москве. Свою первую веб-страницу сделал на `geocities
-<http://ru.wikipedia.org/wiki/GeoCities>`_ годом позже. Получил пару зачетов
-автоматом за то, что нашел нужную преподавателю информацию в Интернете. Некоторое
-время работал администратором в интернет-кафе при РУДН, где изучил HTML и
-Flash и впервые сделал сайт за деньги.
-
-Позже я пробовал себя в дизайне и работал верстальщиком, однако ни то, ни другое
-не удовлетворяли -- дизайн требовал слишком больших усилий, а верстка в то время
-была табличной и довольно скучной. Глядя на коллег-программистов, на их
-могущество и востребованность, я стал интересоваться CMS (системами управления
-контентом) и программированием в общем. Вспомнил, что учительница по
-информатике пророчила мне большое будущее в программировании, да и как-то раз я
-занял второе место в республиканских соревнованиях по Turbo Pascal.
-
-Первое, что попалось на глаза, была система `e107
-<http://ru.wikipedia.org/wiki/E107_CMS>`_. Жуткая, неповоротливая махина,
-которая, однако, впечатлила и очаровала на некоторое время. Работая на ней, я
-понял цену гибкости, с чем у большинства CMS были большие проблемы.
-
-Далее была череда всего, с чем обычно сталкивается начинающий веб-разработчик:
-Joomla, Mambo, ..., etomite. Последняя система поразила легким весом и
-маневренностью, она справлялась со многими экзотическими задачами и не
-требовала больших затрат по времени. Группа энтузиастов сделала ответвление
-etomite под названием MODx, с которым я связал большую часть своей дальнейшей
-профессиональной деятельности. Более того, мне довелось стать `начинателем
-русскоязычного сообщества этой системы <http://modx.ru/novosti-i-stati/article/50/>`_.
-
-Почувствовав себя тесно в рамках MODx, пусть даже и весьма гибкой (настолько,
-что ее иногда называют `фрэймворком для управления контентом или CMF`), я
-заинтересовался более совершенными инструментами - *фрэймворками* и MVC.
-Самым популярным на тот момент был Ruby On Rails. Стоит отметить, что однажды
-`MODx соперничал с ROR <http://forums.modx.com/thread/156/
-packt-open-source-cms-award?page=6#dis-post-1495>`_ в номинациях от
-издательства Packt. ROR был написан на Ruby, а я не был готов тогда изучать
-новый язык, поэтому стал рассматривать аналоги на PHP. Я попробовал Symfony,
-CodeIgniter и в итоге пришел к Zend Framework. Солидность, массивность и факт
-того, что ее поддерживали сами разработчики PHP убедили меня в том, что вот оно
-- мое последнее пристанище, совершенный инструмент для разработки! Параллельно
-я изучил и стал адептом
-`объектно-ориентированного программирования <http://ru.wikipedia.org/wiki/
-Объектно-ориентированное_программирование>`_.
-
-На ZF я сделал несколько серьезных проектов (среди них интернет-магазины и
-сервис статистики хоккейных игр), плюс разработал свой `механизм моделей
-<{filename}/whyte.rst>`_.
-
-Когда я в какой-то момент столкнулся с проблемами производительности ZF (а
-именно проблемы с производительностью объектов, классов и наследственности), я
-вспомнил, что PHP изначально не был ОО-языком и что ОО-ипостась его только
-развивалась. Тогда я решил перебороть свою "консервативность" и взглянуть на
-другие, изначально объекто-ориентированные языки...
-
-Настоящую страсть (особенно обязательной функциональной идентацией и PEP8)
-вызвал Питон. Я испытывал практически детский восторг, пробуя писать код на
-нем. А если взглянуть на широту сфер его применения, не останется никаких
-сомнений, что это вот настоящий удобный язык для специалистов. Строгий,
-расчитаный на читаемость, изящный - огромный контраст с "босоногим" PHP.
-
-На Питоне я пишу код по сей день. А этот блог и эта страница написаны на
-`reStructured <http://docutils.sourceforge.net/rst.html>`_ - языке документаций
-(не побоюсь такого термина) для Питона, ставшим для меня стандартом для
-написания текста.
-
-У меня даже есть `резюме на Питоне <{filename}/pages/cv.rst#id8>`_.
+.. contents:: Contents:
 
 
-Профиль деятельности
-====================
+History
+=======
 
-* веб-приложения
-* добыча и обработка данных
-* автоматизация процессов
-* организация рабочего окружения и потока
+I was introduced to the Internet in 1996 while attending `Moscow Internet Expo`.
+A year later I managed to launch my first homepage at `geocities
+<http://ru.wikipedia.org/wiki/GeoCities>`_. I got some "excellent" marks at
+the University by simply providing my professors with requested information
+(which couldn't be obtained by other means) found through Alta Vista or Yahoo.
+I worked for some time at the campus internet cafe, where I studied HTML
+and Flash and also made my first website for money.
+
+Later, I tried myself in webdesign and frontend but neither was satisfying:
+it took too much time to come up something decent and frontend (the
+cross-browser aspect in particular) was rather boring. My backend colleagues,
+on the other hand, impressed me much -- they had power project-wise and
+were in huge demand. So, I recalled my Informatics teacher positive
+characteristics on me and the fact that I have won the second prize in our
+local programming contest (Turbo Pascal) at high school, and plunged into the
+backend world.
+
+The first thing I tried was `e107 <http://ru.wikipedia.org/wiki/E107_CMS>`_ --
+a big clumsy CMS that did some job for me. Working with it revealed the value
+of flexibility, most of the PHP systems were lacking of.
+
+Next was the series of usual PHP stuff a self-educated developer had to face:
+Joomla, Mambo, ..., etomite. The last one was surprisingly light and flexible
+and coped with exotic tasks easily. There also was a fork of it, called `MODx`
+which had a huge potential and became my tool of choice for years to come.
+Furthermore `I founded the Russian MODx Community
+<http://modx.ru/novosti-i-stati/article/50/>`_ and had been leading it for
+some time.
+
+Eventually the time came when MODx wasn't enough and I started to look for
+something even more flexible, the *frameworks*. There was a hype around
+`Ruby On Rails`, and I did a couple of test projects on it. Unfortunately I
+couldn't handle the new language easily so I fled back to PHP to try `Symfony`
+and `CodeIgniter`. While mastering the frameworks I started to see new horizons for
+myself as a webdev: I felt like I could do anything! An online-shop, a
+corporate system with intranet, a bank account system (no, of course)! The only
+thing left was to choose the *right* framework. The framework that doesn't fail,
+has active community, is backed by serious people and is kind of
+enterprise-level. And in PHP that, of course, was `Zend Framework`, so I
+invested all of my time in it for the next couple of years.
+
+I did quite a few large projects on ZF: a couple of online-shops, a sports game
+video catalogue and a model system called `Whyte Model`_. Some time later I
+realized that I liked `Object Oriented Programming` very much and PHP was not so
+object oriented by design. I felt the need to switch to a *naturally* OO
+language. I looked at `Ruby` again for a little bit but finally decided to start
+learning `Python`.
+
+Python gave me the real passion for programming. Its rules (functional indentation,
+PEP8, importing), `readabilty-first` concept, general matureness, that academic
+flavour convinced me I made the right choice. I was also impressed by the vast
+number of areas where Python was employed: desktop apps, web, science,
+3D-modeling, etc.
+
+I write in Python nowadays -- this blog works on Pelican and is written in
+`reStructured <http://docutils.sourceforge.net/rst.html>`_, a Python
+documentation language.
+
+I even have a funny `cv in Python <{filename}/pages/cv.rst#id11>`_.
 
 
-Инструменты
-===========
+Profile
+=======
 
-* Python, Pyramid, Django, Flask, Scrapy, Pelican, Sphinx, Fabric, Mako, Jinja
-* PHP, Zend Framework, Slim, Idiorm, Paris
-* SQLite, MySQL, ZODB
-* jQuery, HTML5, CSS3, Bootstrap
-* JSON, XML, CSV
-* git
-* PyCharm, PHPStorm, Vim, PEP8
-* reStructured Text, Markdown, Textile
-* Amazon Web Services, reg.ru
-* bitbucket, github
-* Ubuntu, Dell Inspiron 3737
-* Android, Nexus 4, Nexus 7
+* web-applications
+* data obtaining and processing
+* task automating
+* environment and workflow organization
 
 
-Увлечения
+Interests
 =========
 
-* `видео-игры <http://live.xbox.com/en-US/Profile?gamertag=MaxKorinets>`_
-* `музыка <http://www.last.fm/user/yentsun>`_
-* интернет
-* квадрокоптеры
+* video-gaming
+* `music <http://www.last.fm/user/yentsun>`_
+* internet
 
-.. note:: Долгое время я использовал ник `yentsun`. Это слово ничего не значит.
-          Есть человек в Корее или Китае с такой фамилией. В свое врем я был
-          фанатом игры Mortal Kombat, где есть персонаж Shang Tsung, скорее
-          все мой ник навеян этим.
+.. note:: I used to use `yentsun` nickname for a long time. The word does not
+          mean anything at all. There are people in Asia with this family name
+          and that is a coincidence. I guess this nickname came from the Mortal
+          Kombat game, where there was a character called Shang Tsung.
+
+
+.. _Whyte Model: {filename}/whyte.rst

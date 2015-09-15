@@ -1,16 +1,16 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
-AUTHOR = u'Максим Коринец'
-SITENAME = u"Max's Log (блог Максима Коринца)"
+# -*- coding: utf-8 -*- #
+
+AUTHOR = 'Max Korinets'
+SITENAME = "Max's Korinets Web Log"
 SITEURL = 'http://localhost:8080'
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
 
-DEFAULT_LANG = u'ru'
+DEFAULT_LANG = 'en'
 
 THEME = 'themes/iris'
 

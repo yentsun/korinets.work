@@ -4,11 +4,10 @@
     <title>{% block title %}{{SITENAME}}{% endblock %}</title>
     {% block noindex %}{% endblock %}
     <meta name="description" content="{% block description %}
-                        Персональный сайт Максима Коринца, еще одного
-                        веб-разработчика
+        A personal blog of Max Korinets, another oldschool webdev
                         {% endblock %}">
-    <meta name="keywords" content="{% block keywords %}веб-разработка, персональный блог{% endblock %}">
-    <meta name="author" content="{% if article %}{{article.author}}{% else %}Максим Коринец{% endif %}">
+    <meta name="keywords" content="{% block keywords %}webdev, personal blog{% endblock %}">
+    <meta name="author" content="{% if article %}{{article.author}}{% else %}Max Korinets{% endif %}">
     <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
 
     <link href="http://fonts.googleapis.com/css?family=Inconsolata"
@@ -45,9 +44,9 @@
 </header><!-- /#banner -->
 <nav id="main">
     {% if article or articles_page %}
-    <span>блог</span>
+    <span>blog</span>
     {% else %}
-    <a href="/">блог</a>
+    <a href="/">blog</a>
     {% endif %}
     <span class="bullet">⚫</span>
     {% for p in PAGES|sort(attribute='sort_order') %}
@@ -87,12 +86,12 @@
             &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2015
         </div>
         <div>
-            работает на <a href="http://getpelican.com/">Pelican</a>
-            и <a href="http://python.org">Python</a>.
-            Оформление от <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a>
+            Works on <a href="http://getpelican.com/">Pelican</a>
+            and <a href="http://python.org">Python</a>.
+            Theme by <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a>
         </div>
         <div>
-            Шрифты <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">заголовка</a> и <a href="http://www.google.com/webfonts/specimen/Inconsolata">кода</a> от Google fonts
+            <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">The title</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">the code</a> fonts by Google
         </div>
         <div class="social">
             {% for name, link in SOCIAL %}
