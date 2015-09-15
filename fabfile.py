@@ -35,14 +35,15 @@ def regenerate():
 
 def serve():
     os.chdir(env.deploy_path)
+    port = 8080
 
-    PORT = 8000
     class AddressReuseTCPServer(SocketServer.TCPServer):
         allow_reuse_address = True
 
-    server = AddressReuseTCPServer(('', PORT), SimpleHTTPServer.SimpleHTTPRequestHandler)
+    server = AddressReuseTCPServer(('', port),
+                                   SimpleHTTPServer.SimpleHTTPRequestHandler)
 
-    sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
+    sys.stderr.write('Serving on port {0} ...\n'.format(port))
     server.serve_forever()
 
 
