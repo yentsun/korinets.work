@@ -1,11 +1,11 @@
-Контакты
+Contacts
 ========
 
 :sort_order: 9
 :slug: contacts
-:lang: ru
+:lang: en
 
-E-mail, мессенджер, телефон и т. д.
+E-mail, messengers, phone etc.
 
 :|email|: max@korinets.name, mkorinets@gmail.com
 :|hangouts|: mkorinets@gmail.com

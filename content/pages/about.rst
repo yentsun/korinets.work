@@ -21,11 +21,10 @@ I was raised in a family of a graphic designer and an economist, attended an
 art school and got some musical education from my grandfather. As a child I
 was interested in photography, computers and games.
 
-.. contents:: Contents:
+.. contents::
 
-
-History
-=======
+Biography
+=========
 
 I was introduced to the Internet in 1996 while attending `Moscow Internet Expo`.
 A year later I managed to launch my first homepage at `geocities
@@ -91,9 +90,11 @@ I even have a funny `cv in Python <{filename}/pages/cv.rst#id11>`_.
 Profile
 =======
 
+As a software developer I do:
+
 * web-applications
-* data obtaining and processing
-* task automating
+* data transporting and processing
+* task automation
 * environment and workflow organization
 
 
