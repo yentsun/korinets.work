@@ -37,7 +37,7 @@ could include modules like:
 * popular services integration (Google+, Flickr, Facebook)
 * well-documented API
 
-Any of my `skills <{filename}/pages/cv.rst#id4>`_ can be applied for the
+Any of my `skills <{filename}/pages/cv.rst#skills>`_ can be applied for the
 development.
 
 
