@@ -6,9 +6,16 @@ AUTHOR = 'Max Korinets'
 SITENAME = "Max's Korinets Web Log"
 SITEURL = 'http://localhost:8080'
 
+DATE_FORMATS = {
+    'en': ('en_US.UTF-8', '%a, %d %b %Y'),
+    'ru': ('ru_RU.UTF-8', '%d.%m.%Y'),
+}
+
+LOCALE = ('en_US.UTF-8', 'ru_RU.UTF-8')
+
 PATH = 'content'
 
-TIMEZONE = 'Europe/Moscow'
+TIMEZONE = 'Asia/Bangkok'
 
 DEFAULT_LANG = 'en'
 
