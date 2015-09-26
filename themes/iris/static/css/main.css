@@ -96,7 +96,7 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);
 blockquote{margin-left:2em; color:#777}
 img.align-left{float:left; margin:1.5em; margin-left:0}
 
-.note{background-color:#e7f2fa; color: #404040;}
+.note{background-color:#e7f2fa; color: #404040; margin-top:1em}
 .note .admonition-title{margin-top:0; background-color: rgba(95, 147, 189, 0.95);
                         color:#fff; padding:.3em 1em; font-family:sans-serif}
 .note .admonition-title:before{content:"\f05a\0000a0";

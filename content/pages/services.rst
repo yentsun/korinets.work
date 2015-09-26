@@ -74,7 +74,7 @@ it to your storage.
    :width: 450
    :align: center
 
-Some of possible transfer schemes:
+Some of the transfer schemes:
 
 * XML feed --> your app MySQL database
 * Excel table -> your JSON feed with fields named differently

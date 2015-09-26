@@ -1,106 +1,81 @@
-Резюме
-======
+CV
+==
 
 :sort_order: 2
-:lang: ru
+:lang: en
 :slug: cv
 
-email: mkorinets@gmail.com
+.. note:: I am currently employed
 
---------------------------------------------------------------------------
-
-.. note:: На данный момент я трудоустроен
-
-.. contents:: разделы:
+.. contents:: contents:
 
 
-Цель
-----
-
-Получить должность *удаленного* веб-разработчика или менеджера
-проектов.
-
-
-Навыки
+Skills
 ------
 
 .. include:: ../partials/skills.rst
 
 
-Особенности
------------
+Perks
+-----
 
-- опыт разработки в интернете с 1998 г, уверенные навыки в практически всех
-  областях веб-индустрии
-- стараюсь автоматизировать процессы и максимально исключить человеческий
-  фактор
-- перфекционист, всегда ищу современное оптимальное решение
-- ``профессия == хобби``
-- умею выслушивать, вести диалог внутри команды и с клиентом
-- повышенное внимание к орфографии (знаю когда *тся* и *ться* и когда
-  *"вы"* с большой буквы)
-- владею английским языком (регулярное чтение литературы, новостей и
-  документации в оригинале)
+- full stack dev, practicing almost every aspect of the web since 1998
+- crave to automate things and remove human factor (starting from myself)
+- a perfectionist, always trying to find the optimal solution
+- my profession is also my hobby
+- I can listen to people and engage in productive dialog
+- I try to deliver value ASAP
+- an exploring programmer, I like to experiment a lot
 
 
-Достижения
-----------
+Achievements
+------------
 
-- QuizUp: `3-е место`_ в России в разделе Computer Science
-- стал "контрибутором" в `репозиторий pyramid_tm`_ (транзакции для Pyramid)
-- разработал программный продукт (`Hydra`_), сделавший качественный скачок в
-  работе студии `ART3D Graphics`_
-- разработал гибкую систему "нейминга" ресурсов `ShortHand`_
-- ввел `документацию <http://art3d.ru/docs/>`_ и руководства внутри компании
-  (reStructuredText)
-- получил приглашение на *несуществующий ресурс* за интересное
-  `резюме`_
-- разработал собственный пакет (`Whyte Model`_) абстрактных классов на PHP
-- запустил систему автоматического развертывания обновлений на базе git
-- запустил полнотекстовый поиск на Zend Lucene (+ PyLucene)
-- репутация на StackOverflow (http://stackoverflow.com/users/216042/yentsun)
-- основал сообщество MODx Russia и являлся его лидером несколько лет
-- автоматизировал процесс запуска звуковых рекламных объявлений (СтройДвор)
-- был выбран шифт-лидером на открытии первого T.G.I. Friday's в Москве
-- занял второе место в республиканских соревнованиях по программированию
+- QuizUp: `3rd`_ in Russia in Computer Science
+- contributed to `pyramid_tm`_ (transaction manager for Pyramid)
+- developed a software complex (`Hydra`_) which led to a breakthrough at
+  `ART3D Graphics`_
+- introduced a flexible naming system `ShortHand`_ at `ART3D Graphics`_
+- got an invitation to some elite nonexistent for this funny `python_cv`_
+- developed an abstract model package (`Whyte Model`_)
+- launched my first git-based deployment system
+- launched a fulltext search system on Zend Lucene (+ PyLucene)
+- reputation on StackOverflow (http://stackoverflow.com/users/216042/yentsun)
+- founded MODx Russia and led it for several years
+- automated audio advertisements at СтройДвор, Moscow
+- was chosen as shift-leader at first T.G.I. Friday's Moscow opening
+- took 2nd prize at North Osetian Programming Contest (Turbo Pascal)
 
 
-История трудоустройства
------------------------
+Employment history
+------------------
 
-:2014-2015: `Aprill Group`_, ведущий веб-разработчик (python, Django)
-:2012-2014: `ART3D Graphics`_, руководитель отдела серверных технологий,
-            автоматизация процессов, исследования и разработка
-:2012-2012: фриланс, разработка сайтов на ZF, Pyramid, видео-контент
-            (HTML5)
-:2010-2012: Стрим-Пост, Москва, *главный разработчик / менеджер проекта*
-            (веб-коммерция, Zend Framework)
-:2008-2010: фриланс (портфолио для фотографов, каталоги продукции)
-:2007-2008: Робаком Сервис (логистика), *графический дизайн*,
-            *веб-разработка*, *все-в-одном*
-:2005-2007: Студия `Webexpert`_, *html-верстальщик*
-:1998-2002: Российский Университет Дружбы Народов,
-            *администратор интернет-кафе*, *любительская веб-разработка*,
-            *все-в-одном*
-:1996-1997: T.G.I. Friday's, официант, бармен, помощник повара
+:2014-2015: `Aprill Group`_, leading webdev (Python, Django)
+:2012-2014: `ART3D Graphics`_, head of backend department (Python, PHP)
+:2012-2012: freelance, webdev on ZF, Pyramid, video processing
+:2010-2012: Стрим-Пост, leading webdev (e-commerce, Zend Framework)
+:2008-2010: freelance (photo portfolios, e-commerce, PHP)
+:2007-2008: Робаком Сервис, full stack developer
+:2005-2007: `Webexpert`_ Studio, frontend dev (js, html, Flash)
+:1998-2002: Russian People's Friendship University, internet cafe admin
+:1996-1997: T.G.I. Friday's, waiter, bartender, cook
 
 
-Образование
------------
+Education
+---------
 
-:2011-2011: 'Введение в БД', онлайн-курс, Стэнфорд
-              (http://db-class.org)
-:2010-2011: Python, Django, Pyramid, самообразование
-:2009-2010: Zend Framework, ООП на PHP, самообразование
-:1996-2000: кибернетика, Инженерный факультет РУДН, Москва
-:1994-1996: Turbo Pascal, Кружок программистов, г. Владикавказ
+:2011-2011: 'Introduction to databases', Stanford Online (http://db-class.org)
+:2010-2011: Python, Django, Pyramid, self-education
+:2009-2010: Zend Framework, PHP, OOP self-education
+:1996-2000: Cybernetics, Engineering Faculty, RPFU, Moscow
+:1994-1996: Turbo Pascal, programming section, Vladikavkaz
 
-.. _резюме:
+.. _python_cv:
 
-Резюме на Питоне
-----------------
+A CV in Python
+--------------
 
-Шуточное резюме под первыми впечатлениями от Питона и SQLAlchemy:
+This is a mock CV under impression of Python
 
 .. include:: ../partials/py-cv.rst
 
@@ -111,8 +86,7 @@ email: mkorinets@gmail.com
 .. _Whyte Model: {filename}/whyte.rst
 .. _Hydra: {filename}/hydra.rst
 .. _Shorthand: http://art3d.ru/docs/shorthand.html
-.. _3-е место: https://www.quizup.com/en/topics/computer-science/2015/1?scope=
+.. _3rd: https://www.quizup.com/en/topics/computer-science/2015/1?scope=
                country&country=RU&player_id=529304157232955477&banner=lb:
                computer-science:RU:month:1:2015:3&position=3&source=share
-.. _репозиторий pyramid_tm: https://github.com/Pylons/pyramid_tm
-                            /graphs/contributors
+.. _pyramid_tm: https://github.com/Pylons/pyramid_tm/graphs/contributors
