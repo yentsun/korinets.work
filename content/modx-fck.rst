@@ -3,7 +3,7 @@
 
 :date: 2008-01-16 19:12
 :tags: modx, fckeditor
-:category: вебдев
+:category: webdev
 :slug: modx-fck
 :abstr: Очень и очень долго рыл по этому вопросу форум и ничего не нашел. Папки
         и файлы в менеджере ресурсов FCK-Editor (который стоит сейчас по

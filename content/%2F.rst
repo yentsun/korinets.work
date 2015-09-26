@@ -3,7 +3,7 @@
 
 :date: 2014-11-12 10:29
 :tags: python, wsgi, zodb, pyramid, traversal
-:category: вебдев
+:category: webdev
 :slug: forward_slash_wsgi
 :abstr: Если так случилось, что идентификаторы в вашем приложении содержат
         “слэш” (“/”), и вы решили написать для него веб-интерфейс на базе WSGI,

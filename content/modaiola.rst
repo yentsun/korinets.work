@@ -3,7 +3,7 @@
 
 :date: 2011-10-11 10:04
 :tags: php, zend_framework, mysql, html, jquery, online-shop
-:category: мои проекты
+:category: projects
 :slug: modaiola
 :abstr: Интернет-магазин одежды на Zend Framework, интеграция с 1С.
 :lang: ru

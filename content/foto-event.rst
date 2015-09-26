@@ -3,7 +3,7 @@ foto-event.ru
 
 :date: 2012-07-02 10:04
 :tags: python, pyramid, sqlite, html, jquery
-:category: мои проекты
+:category: projects
 :slug: foto-event
 :abstr: Сайт-галерея фотографа Дениса Дюдюева. Агрегация из Google+ и Flickr.
 :lang: ru

@@ -3,7 +3,7 @@
 
 :date: 2010-12-06 10:04
 :tags: php, zend_framework, mysql, html, jquery
-:category: мои проекты
+:category: projects
 :slug: kk
 :abstr: Сайт конкурса красоты "Первая леди" для участниц из Москвы и других
         городов России. На сколько мне известно, так и не был запущен.

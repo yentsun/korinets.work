@@ -3,7 +3,7 @@ WYSIWYG от сноба для блондинки
 
 :date: 2010-05-07 10:20
 :tags: WYMeditor, обзор, хвалы
-:category: вебдев
+:category: webdev
 :slug: wysiwyg
 :abstr: Их развелось слишком много. Помню времена когда был tinyMCE и
         FCKeditor (и HTMLArea) и ломать голову, что прикрутить к системе

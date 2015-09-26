@@ -3,7 +3,7 @@ Real Estate Utils
 
 :date: 2012-09-03 12:02
 :tags: python, sqlalchemy, утилиты
-:category: мои проекты
+:category: projects
 :slug: re-utils
 :abstr: Для обработки и сохранения больших объемов информации о недвижимости,
         для манипуляций графикой (SVG), связанной с этой недвижимостью, а также

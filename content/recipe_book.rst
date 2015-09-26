@@ -3,7 +3,7 @@ Recipe Book (Kook)
 
 :date: 2012-01-30 10:04
 :tags: python, pyramid, sqlalchemy, colander, mako, json
-:category: мои проекты
+:category: projects
 :slug: recipe_book
 :abstr: Под впечатлением от StackOverflow, игрофикации и будучи увлечённым
         готовкой, я решил написать веб-приложение для начинающих и

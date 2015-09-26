@@ -3,7 +3,7 @@
 
 :date: 2008-02-01 10:20
 :tags: modx, tagcloud
-:category: вебдев
+:category: webdev
 :slug: tagcloud4000
 :abstr: Попробовав применить сниппет TvTagCloud к своей огромной базе
         документов, получил превышение ожидания запроса (или что то в этом

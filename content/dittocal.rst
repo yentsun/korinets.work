@@ -3,7 +3,7 @@
 
 :date: 2007-12-26 10:20
 :tags: modx, dateFilter, Ditto, DittoCal
-:category: вебдев
+:category: webdev
 :slug: dittocal
 :abstr: Для того чтобы Ditto видел параметры DittoCal (которые отличаются
         приставкой ``cal_``), возможно нужно изменить фильтр/экстендер

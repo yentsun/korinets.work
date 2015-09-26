@@ -3,7 +3,7 @@ food-price.net
 
 :date: 2015-04-04 10:04
 :tags: python, pyramid, traversal, ZODB, mako, json, yaml
-:category: мои проекты
+:category: projects
 :slug: price_watch
 :abstr: Изначально задуманный как вспомогательный проект для сайта рецептов,
         food-price.net вырос в самостоятельный сервис по сбору информации о

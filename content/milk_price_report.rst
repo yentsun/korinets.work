@@ -3,7 +3,7 @@ Milk Price Report
 
 :date: 2014-10-01 10:04
 :tags: python, zodb, yaml
-:category: мои проекты
+:category: projects
 :slug: milk-price-report
 :abstr: Было ли вам когда-нибудь интересно узнать где в Москве самое дешевое
         молоко? Какая в Петербурге средняя цена на ржаной хлеб? Сколько в

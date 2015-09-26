@@ -3,7 +3,7 @@
 
 :date: 2011-04-02 10:04
 :tags: php, zend_framework, mysql, html, jquery, online-shop
-:category: мои проекты
+:category: projects
 :slug: invask
 :abstr: Интернет-магазин музыкальных инструментов на Zend Framework, интеграция
         с 1С.

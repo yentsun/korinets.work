@@ -3,7 +3,7 @@ Whyte Model
 
 :date: 2011-09-16 12:02
 :tags: php, mvc, zend_form
-:category: мои проекты
+:category: projects
 :slug: whyte
 :abstr: Чтобы избежать дублирования модели в Zend Framework (вначале как класс,
         затем как описание формы в Zend Form), я написал набор абстрактных

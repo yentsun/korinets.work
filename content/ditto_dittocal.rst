@@ -3,7 +3,7 @@
 
 :date: 2007-12-26 15:06
 :tags: modx, Ditto, DittoCal
-:category: вебдев
+:category: webdev
 :slug: dittodittocal
 :abstr: По умолчанию DittoCal при нажатии на ссылку даты выводит один
         (не известно по каким критериям отобранный) пост. DittoCal не учитывает

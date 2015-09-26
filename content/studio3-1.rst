@@ -3,7 +3,7 @@ Studio 3:1
 
 :date: 2012-05-23 10:04
 :tags: php, zend_framework, mysql, html, jquery
-:category: мои проекты
+:category: projects
 :slug: studio3-1
 :abstr: Сайт хоккейной статистики для профессионалов.
 :lang: ru

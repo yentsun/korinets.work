@@ -3,7 +3,7 @@
 
 :date: 2008-01-10 12:03
 :tags: modx, encoding
-:category: вебдев
+:category: webdev
 :slug: windows-1251-utf-8
 :abstr: Проблема: после перехода сайта на utf-8 все работает нормально за
         исключением следующих моментов

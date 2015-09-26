@@ -3,7 +3,7 @@ Hydra
 
 :date: 2014-01-22 12:02
 :tags: python, sqlalchemy, fabric
-:category: мои проекты
+:category: projects
 :slug: hydra
 :abstr: Проект, специально разработанный для ART3D Graphics. Включает в себя
         парсеры входных данных, генераторы растровых изображений (чертежей) и
