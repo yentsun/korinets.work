@@ -5,14 +5,15 @@ Contacts
 :slug: contacts
 :lang: en
 
-E-mail, messengers, phone etc.
+E-mail, messengers, phone etc. in order of preference
 
 :|email|: max@korinets.name, mkorinets@gmail.com
 :|hangouts|: mkorinets@gmail.com
-:|whatsapp|: +66 91826 2292
-:|skype|: max.korinets
+:|viber|: +66 91826 2292
+:|telegram|: +66 91826 2292
 
 .. |email| image:: ../images/email.png
 .. |hangouts| image:: ../images/hangouts.png
-.. |whatsapp| image:: ../images/whatsapp.png
-.. |skype| image:: ../images/skype.png
+.. |viber| image:: ../images/viber.png
+.. |telegram| image:: ../images/telegram.png
+    :width: 48
