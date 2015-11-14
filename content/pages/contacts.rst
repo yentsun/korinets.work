@@ -12,8 +12,8 @@ E-mail, messengers, phone etc. in order of preference
 :|viber|: +66 91826 2292
 :|telegram|: +66 91826 2292
 
-.. |email| image:: ../images/email.png
-.. |hangouts| image:: ../images/hangouts.png
-.. |viber| image:: ../images/viber.png
-.. |telegram| image:: ../images/telegram.png
+.. |email| image:: /images/email.png
+.. |hangouts| image:: /images/hangouts.png
+.. |viber| image:: /images/viber.png
+.. |telegram| image:: /images/telegram.png
     :width: 48
