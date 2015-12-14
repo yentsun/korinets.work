@@ -16,7 +16,7 @@ food-price.net
 
 :Тех. стек: python 2.7, pyramid, ZODB, mako, json, yaml, dogpile_cache
 :Репозиторий: https://github.com/yentsun/price_watch
-:Статус: в активной разработке
+:Статус: "заморожен" с минимальной поддержкой
 
 .. image:: https://travis-ci.org/yentsun/price_watch.svg?branch=master
     :target: https://travis-ci.org/yentsun/price_watch

@@ -5,8 +5,6 @@ CV
 :lang: en
 :slug: cv
 
-.. note:: I am currently employed
-
 .. contents:: contents:
 
 
@@ -50,11 +48,12 @@ Achievements
 Employment history
 ------------------
 
+:2015-now: self-employed (Node.js, Seneca.js, MEAN stack, Docker)
 :2014-2015: `Aprill Group`_, leading webdev (Python, Django)
 :2012-2014: `ART3D Graphics`_, head of backend department (Python, PHP)
-:2012-2012: freelance, webdev on ZF, Pyramid, video processing
+:2012-2012: self-employed (ZF, Pyramid, video processing)
 :2010-2012: Стрим-Пост, leading webdev (e-commerce, Zend Framework)
-:2008-2010: freelance (photo portfolios, e-commerce, PHP)
+:2008-2010: self-employed (photo portfolios, e-commerce, PHP)
 :2007-2008: Робаком Сервис, full stack developer
 :2005-2007: `Webexpert`_ Studio, frontend dev (js, html, Flash)
 :1998-2002: Russian People's Friendship University, internet cafe admin
