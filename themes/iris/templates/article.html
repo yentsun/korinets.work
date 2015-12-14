@@ -16,7 +16,7 @@
               {{ article.locale_date }}
           </span>
           {% if article.tags %}
-          | теги:
+          | tags:
               {% for tag in article.tags %}
                   <a href="/tag/{{ tag }}.html">
                       <i class="fa fa-tag"></i> {{ tag }}</a>

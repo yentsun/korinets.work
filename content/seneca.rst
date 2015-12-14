@@ -8,7 +8,6 @@ My experience with Senecajs
 :abstr: I've known Senecajs and microservices for just a couple of months and
         got very excited about them. Seems like I'm a little bit closer to a
         perfect architecture for of complex software
-
 :lang: en
 
 Having received a task - ‘to build a microservice’ - I started to dig what the
