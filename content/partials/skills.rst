@@ -25,7 +25,7 @@
 |                       +-------------------------+---------------+
 |                       | WebOb                   | `***`         |
 |                       +-------------------------+---------------+
-|                       | Fabric                  | `***`         |
+|                       | `Fabric`_               | `***`         |
 |                       +-------------------------+---------------+
 |                       | Scrapy                  | `**`          |
 |                       +-------------------------+---------------+
@@ -108,3 +108,4 @@
 .. _`Seneca.js`: {filename}/seneca.rst
 .. _`Slim`: https://github.com/yentsun/showcase_backend
 .. _`Idiorm`: https://github.com/yentsun/showcase_backend
+.. _`Fabric`: https://github.com/yentsun/hydra/blob/master/fabfile.py
