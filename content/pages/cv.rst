@@ -8,6 +8,16 @@ CV
 .. contents:: contents:
 
 
+Current interests
+-----------------
+
+- distributed programming
+- microservice architecture
+- `Senecajs <http://senecajs.org/>`_,
+  `Nameko <http://nameko.readthedocs.org/en/latest/>`_
+- AMPQ, RabbitMQ, ZeroMQ
+
+
 Skills
 ------
 
@@ -21,7 +31,7 @@ Perks
 - crave to automate things and remove human factor (starting from myself)
 - a perfectionist, always trying to find the optimal solution
 - my profession is also my hobby
-- I can listen to people and engage in productive dialog
+- I can actually listen to people and conduct a productive dialog
 - I try to deliver value ASAP
 - an exploring programmer, I like to experiment a lot
 
