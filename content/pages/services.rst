@@ -13,11 +13,11 @@ I can do the following:
 ====================================  =============  ==================
 job                                   time           approx. cost
 ====================================  =============  ==================
-`complete web application`_           1 month        :usd:`2000`
-`web server launch`_                  1 day          :usd:`300`
-`one time data transfer`_             2 days         :usd:`300`
-`data transfer service`_              1 week         :usd:`1000`
-miscellaneous                         1 hour         :usd:`20`
+`complete web application`_           1 month        :usd:`4000`
+`web server launch`_                  1 day          :usd:`600`
+`one time data transfer`_             2 days         :usd:`600`
+`data transfer service`_              1 week         :usd:`2000`
+miscellaneous                         1 hour         :usd:`50`
 ====================================  =============  ==================
 
 .. note:: If your project involves a technology of my
