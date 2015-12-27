@@ -20,6 +20,10 @@ job                                   time           approx. cost
 miscellaneous                         1 hour         :usd:`20`
 ====================================  =============  ==================
 
+.. note:: If your project involves a technology of my
+          `current interests <{filename}/pages/cv.rst#current-interests>`_ -
+          you'll have a **20% discount**
+
 .. _complete web application:
 
 Complete web application

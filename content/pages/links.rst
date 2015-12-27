@@ -18,21 +18,21 @@ Links to my profiles mostly
 +-----------------------+-------------------------+---------------+
 | Google Plus           | `МаксимКоринец`_        | `***`         |
 +-----------------------+-------------------------+---------------+
-| Last FM               | `yentsun@last.fm`_      | `***`         |
+| Last FM               | `yentsun`_              | `***`         |
 +-----------------------+-------------------------+---------------+
 | Xbox Live             | Tag: ``MaxKorinets``    | `*`           |
 +-----------------------+-------------------------+---------------+
 | Pocket                | ``mkorinets@gmail.com`` | `*`           |
 +-----------------------+-------------------------+---------------+
-| Steam                 | `76561198027613660`_    | `**`          |
+| Steam                 | `mkorinets`_            | `**`          |
 +-----------------------+-------------------------+---------------+
 | Batllelog             | `MaxKorinets@BL`_       | `*`           |
 +-----------------------+-------------------------+---------------+
 
 .. _`МаксимКоринец`: https://plus.google.com/u/0/+МаксимКоринец/posts
-.. _`yentsun@last.fm`: http://www.last.fm/user/yentsun
+.. _`yentsun`: http://www.last.fm/user/yentsun
 .. _`MaxKorinets@BL`: http://battlelog.battlefield.com/bf4/ru/soldier/MaxKorinets/stats/230901232/xbox360/
 .. _`yentsun@SO`: http://stackoverflow.com/users/216042/yentsun
 .. _`yentsun@github`: https://github.com/yentsun
 .. _`yentsun@bitbucket`: https://bitbucket.org/yentsun
-.. _76561198027613660: http://steamcommunity.com/profiles/76561198027613660
+.. _mkorinets: http://steamcommunity.com/id/mkorinets

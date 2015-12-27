@@ -7,29 +7,28 @@ Terraria Server on Ubuntu 15.10
 :slug: terraria-server
 :abstr: Most of the guides on how to run a Terraria dedicated server on Ubuntu
         describe it running through TShock. However, there is an easier
-        solution.
-:lang: ru
+        solution if you purchased the game on Steam.
+:lang: en
 
-I play `Terraria`_ with my wife and we soon felt the need to start a local
-dedicated server to play independently (not only through 'Host and Play'
-mode).
+I began playing `Terraria`_ with my wife recently and we soon felt the need to
+start a local dedicated server to play independently (not the 'Host
+and Play' mode).
 
-Here are several guides on how to start one
+There are many guides on how to start one with `TShock`_:
 
 * `reddit <https://www.reddit.com/r/Terraria/comments/2a2gjn/how_to_run_a_dedicated_terraria_server_on_ubuntu/>`_
 * http://quark.humbug.org.au/publications/linux/terraria-server.html
 * https://www.vultr.com/docs/running-a-tshock-terraria-server
 
-There are many more actually and all of them are based on `TShock`_
-installation.
-
-.. note:: This guide works at least for copies purchased on Steam.
-          By the way, if you are in an ASEAN country,
-          I could send you a gift copy of Terraria - just contact me :)
-
 Ok, I followed one of the guides and managed to launch my previously saved world
 through `TShock` aaand... Alas, there were several bugs including door
 malfunction that rendered the game unplayable.
+
+.. note:: This guide works at least for copies purchased on Steam.
+          By the way, if you are in Southeast Asia (Indonesia, Malaysia,
+          Philippines, Singapore, Thailand, Viet Nam),
+          I could send you a gift copy of Terraria - just `contact me
+          <http://steamcommunity.com/id/mkorinets>`_ :)
 
 I've almost decided to fallback to 'Host and Play' but accidentally looked at
 what's in ``~/.steam/steam/SteamApps/common/Terraria``. There were some interesting
