@@ -1,5 +1,5 @@
 +-----------------------+-------------------------+---------------+
-| Programming languages | Node.js, CoffeeScript   | `***`         |
+| Programming languages | `Node.js, CoffeeScript`_| `***`         |
 |                       +-------------------------+---------------+
 |                       | Python 2.7              | `***`         |
 |                       +-------------------------+---------------+
@@ -109,3 +109,4 @@
 .. _`Slim`: https://github.com/yentsun/showcase_backend
 .. _`Idiorm`: https://github.com/yentsun/showcase_backend
 .. _`Fabric`: https://github.com/yentsun/hydra/blob/master/fabfile.py
+.. _`Node.js, CoffeeScript`: https://github.com/yentsun/account
