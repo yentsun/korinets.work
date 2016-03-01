@@ -44,7 +44,7 @@ Achievements
 - developed a software complex (`Hydra`_) which led to a breakthrough at
   `ART3D Graphics`_
 - introduced a flexible naming system `ShortHand`_ at `ART3D Graphics`_
-- got an invitation to some elite nonexistent for this funny `python_cv`_
+- got an invitation to some elite *nonexistent* community for this funny `python_cv`_
 - developed an abstract model package (`Whyte Model`_)
 - launched my first git-based deployment system
 - launched a fulltext search system on Zend Lucene (+ PyLucene)
