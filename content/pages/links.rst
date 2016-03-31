@@ -14,7 +14,9 @@ Links to my profiles mostly
 +-----------------------+-------------------------+-----------------------+
 | Stackoverflow         | `yentsun@SO`_           | `**`                  |
 +-----------------------+-------------------------+-----------------------+
-| Github                | `yentsun@github`_       | `***`                 |
+| GitLab                | `mkorinets@gitlab`_     | `***`                 |
++-----------------------+-------------------------+-----------------------+
+| Github                | `yentsun@github`_       | `**`                  |
 +-----------------------+-------------------------+-----------------------+
 | Bitbucket             | `yentsun@bitbucket`_    | `***`                 |
 +-----------------------+-------------------------+-----------------------+
@@ -39,3 +41,4 @@ Links to my profiles mostly
 .. _`yentsun@github`: https://github.com/yentsun
 .. _`yentsun@bitbucket`: https://bitbucket.org/yentsun
 .. _mkorinets: http://steamcommunity.com/id/mkorinets
+.. _mkorinets@gitlab: https://gitlab.com/u/mkorinets
