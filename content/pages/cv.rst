@@ -11,6 +11,7 @@ CV
 Current interests
 -----------------
 
+- React + Redux frontend
 - distributed programming
 - microservice architecture
 - `Senecajs <http://senecajs.org/>`_,
