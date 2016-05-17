@@ -3,7 +3,7 @@
 
 :date: 2010-01-05 10:20
 :modified: 2014-07-18 12:21
-:tags: mysql, типы данных
+:tags: mysql, cheat-sheet
 :category: webdev
 :slug: mysql-common-data-types
 :abstr: Довольно часто при проектировании очередной базы данных, приходится

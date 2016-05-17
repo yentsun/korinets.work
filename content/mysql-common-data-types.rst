@@ -1,8 +1,8 @@
-Common data types use cases (MySQL)
-###################################
+MySQL data types cheat sheet
+############################
 
 :date: 2010-01-05 10:20
-:tags: mysql, best practices
+:tags: mysql, cheat-sheet
 :category: webdev
 :slug: mysql-common-data-types
 :authors: Max Korinets
@@ -45,6 +45,9 @@ status            TINYINT(1)       1 – published, 0 – unpublished, …
                                    You can also use `ENUM` for human-readable
                                    values
 ================  ===============  ============================================
+
+There is also a similar cheat sheet for `PostgreSQL data types
+<{filename}/postgres-data-types.rst>`_.
 
 .. note::
    Under continuous revision. You can see the `history of commits for this page
