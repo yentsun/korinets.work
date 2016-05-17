@@ -44,6 +44,7 @@ tags, categories  TINYTEXT         comma separated values *
 status            TINYINT(1)       1 – published, 0 – unpublished, …
                                    You can also use `ENUM` for human-readable
                                    values
+json data         JSON             or LONGTEXT
 ================  ===============  ============================================
 
 There is also a similar cheat sheet for `PostgreSQL data types
