@@ -18,9 +18,10 @@ experience and (hopefully) best practices in the following table. Any comments
 or additions are more than welcome.
 
 ================  ===============  ============================================
-Column            Data type        Comment
+Column            Data type        Note
 ================  ===============  ============================================
 id                INTEGER          `AUTO_INCREMENT`, `UNSIGNED`
+uuid              CHAR(36)         or CHAR(16) binary
 title             VARCHAR(255)
 full name         VARCHAR(70)
 gender            TINYINT          `UNSIGNED`

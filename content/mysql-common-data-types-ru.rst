@@ -22,6 +22,7 @@ common-mysql-fields-and-their-appropriate-data-types#>`_), поэтому реш
 Столбец                 Тип данных              Комментарий
 ======================  ======================  ===============================
 идентификатор           INTEGER                 `AUTO_INCREMENT`, `UNSIGNED`
+uuid                    CHAR(36)                либо CHAR(16) в двоичном виде
 полное имя              VARCHAR(70)
 заголовок               VARCHAR(255)
 описание                TINYTEXT                часто недостаточен из-за
