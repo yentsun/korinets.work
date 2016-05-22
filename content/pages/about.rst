@@ -11,7 +11,7 @@ About
    :width: 127
    :align: left
 
-My name is Max Korinets, 36 (to 2015) and I am a World Wide Web fan since my 18.
+My name is Max Korinets, 37 (to 2016) and I am a World Wide Web fan since my 18.
 I like clarity, order and straightforward approach. I also tend to automate
 things and remove human factor. Being a perfectionist, I don't take things
 seriously until they're perfect (i. e. never) though I endlessly try to make
@@ -21,12 +21,14 @@ I was raised in a family of a graphic designer and an economist, attended an
 art school and got some musical education from my grandfather. As a child I
 was interested in photography, computers and games.
 
+I currently live in Siem Reap, Cambodia.
+
 .. contents::
 
 Biography
 =========
 
-I was introduced to the Internet in 1996 while attending `Moscow Internet Expo`.
+The Internet got me in 1996 while I was attending `Moscow Internet Expo`.
 A year later I managed to launch my first homepage at `geocities
 <http://ru.wikipedia.org/wiki/GeoCities>`_. I got some "excellent" marks at
 the University by simply providing my professors with requested information
@@ -34,7 +36,7 @@ the University by simply providing my professors with requested information
 I worked for some time at the campus internet cafe, where I studied HTML
 and Flash and also made my first website for money.
 
-Later, I tried myself in webdesign and frontend but neither was satisfying:
+Later tried myself in webdesign and frontend but neither was satisfying:
 it took too much time to come up something decent and frontend (the
 cross-browser aspect in particular) was rather boring. My backend colleagues,
 on the other hand, impressed me much -- they had power project-wise and
