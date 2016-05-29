@@ -2,7 +2,7 @@ My experience with Senecajs
 ===========================
 
 :date: 2015-12-14 10:36
-:tags: nodejs, microservices
+:tags: nodejs, microservices, seneca
 :category: webdev
 :slug: seneca
 :abstr: I've known Senecajs and microservices for just a couple of months and
