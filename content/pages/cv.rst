@@ -59,7 +59,7 @@ Achievements
 Employment history
 ------------------
 
-:2016-now: XSHELL INC. https://xshell.io/ system engineer (Node.js, NATS, MQTT)
+:2016-now: `XSHELL INC.`_ system engineer (Node.js, NATS, MQTT)
 :2015-2016: self-employed (Node.js, Seneca.js, MEAN stack, Docker)
 :2014-2015: `Aprill Group`_, leading webdev (Python, Django)
 :2012-2014: `ART3D Graphics`_, head of backend department (Python, PHP)
@@ -92,6 +92,7 @@ This is a mock CV under impression of Python
 .. include:: ../partials/py-cv.rst
 
 
+.. _XSHELL INC.: https://xshell.io/
 .. _Aprill Group: http://aprill.ru/
 .. _ART3D Graphics: http://www.art3d.ru/
 .. _Webexpert: http://www.webexpert.ru/
