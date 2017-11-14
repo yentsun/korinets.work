@@ -32,7 +32,7 @@ The Tools
 
 We will use well-known tools:
 
-- ExpresJS_ as http-server to handle incoming requests and pass them as messages
+- ExpressJS_ as http-server to handle incoming requests and pass them as messages
   to the microservices, so we are calling it the *Gateway*
 - RabbitMQ_ as the *Message Queue* (bus)
 - SenecaJS_ as microservice framework
@@ -91,7 +91,7 @@ look like this:
 ... to be continued
 
 
-.. _ExpresJS: http://expressjs.com/
+.. _ExpressJS: http://expressjs.com/
 .. _SenecaJS: http://senecajs.org/
 .. _RabbitMQ: https://www.rabbitmq.com/
 .. _MongoDB: https://www.mongodb.com/
