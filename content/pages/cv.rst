@@ -1,5 +1,5 @@
-CV
-==
+Curriculum Vitae
+================
 
 :sort_order: 2
 :lang: en
@@ -11,12 +11,12 @@ CV
 Current interests
 -----------------
 
+- CQRS, Event Sourcing
 - React + Redux frontend
 - distributed programming
 - microservice architecture
-- `Senecajs <http://senecajs.org/>`_,
-  `Nameko <http://nameko.readthedocs.org/en/latest/>`_
-- AMPQ, RabbitMQ, ZeroMQ
+- NATS
+- Postgres, MongoDB
 
 
 Skills
@@ -59,7 +59,8 @@ Achievements
 Employment history
 ------------------
 
-:2015-now: self-employed (Node.js, Seneca.js, MEAN stack, Docker)
+:2016-now: XSHELL INC. https://xshell.io/ system engineer (Node.js, NATS, MQTT)
+:2015-2016: self-employed (Node.js, Seneca.js, MEAN stack, Docker)
 :2014-2015: `Aprill Group`_, leading webdev (Python, Django)
 :2012-2014: `ART3D Graphics`_, head of backend department (Python, PHP)
 :2012-2012: self-employed (ZF, Pyramid, video processing)
@@ -68,7 +69,7 @@ Employment history
 :2007-2008: Робаком Сервис, full stack developer
 :2005-2007: `Webexpert`_ Studio, frontend dev (js, html, Flash)
 :1998-2002: Russian People's Friendship University, internet cafe admin
-:1996-1997: T.G.I. Friday's, waiter, bartender, cook
+:1996-1997: T.G.I. Friday's Moscow, waiter, bartender, cook :)
 
 
 Education
@@ -80,6 +81,7 @@ Education
 :1996-2000: Cybernetics, Engineering Faculty, RPFU, Moscow
 :1994-1996: Turbo Pascal, programming section, Vladikavkaz
 
+
 .. _python_cv:
 
 A CV in Python
@@ -90,7 +92,7 @@ This is a mock CV under impression of Python
 .. include:: ../partials/py-cv.rst
 
 
-.. _`Aprill Group`: http://aprill.ru/
+.. _Aprill Group: http://aprill.ru/
 .. _ART3D Graphics: http://www.art3d.ru/
 .. _Webexpert: http://www.webexpert.ru/
 .. _Whyte Model: {filename}/whyte.rst

@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Max Korinets'
-SITENAME = "Max Korinets Web Log"
+SITENAME = "Max Korinets Log"
 SITEURL = 'http://localhost:8080'
 
 DATE_FORMATS = {

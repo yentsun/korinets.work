@@ -38,7 +38,7 @@
 <body id="index" class="home">
 <header id="banner" class="body">
     <div class="banner">
-        <a href="{{ SITEURL }}">Max Logbook <strong>{{ SITESUBTITLE }}</strong></a>
+        <a href="{{ SITEURL }}">{{SITENAME}} <strong>{{ SITESUBTITLE }}</strong></a>
     </div>
 
 </header><!-- /#banner -->
@@ -49,13 +49,13 @@
     <a href="/">log</a>
     {% endif %}
     <span class="bullet">⚫</span>
-    {% for p in PAGES|sort(attribute='sort_order') %}
+    {% for p in pages|sort(attribute='sort_order') %}
     {% if p != page %}
     <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
     {% else %}
     <span>{{ p.title }}</span>
     {% endif %}
-    {% if p != PAGES|sort(attribute='sort_order')|last %}
+    {% if p != pages|sort(attribute='sort_order')|last %}
     <span class="bullet">⚫</span>
     {% endif %}
     {% endfor %}
@@ -83,7 +83,7 @@
     <hr/>
     <footer id="contentinfo" class="footer">
         <div>
-            &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2015
+            &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2017
         </div>
         <div>
             Works on <a href="http://getpelican.com/">Pelican</a>
@@ -103,16 +103,6 @@
         </div>
     </footer><!-- /#contentinfo -->
 </div>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script>
-  var config = {
-    apiKey: "AIzaSyCWTXgpX9-UqSY5g7chHKQmZ6N7aJMdaKk",
-    authDomain: "max-logbook.firebaseapp.com",
-    databaseURL: "https://max-logbook.firebaseio.com",
-    storageBucket: "max-logbook.appspot.com",
-  };
-  firebase.initializeApp(config);
-</script>
 <script type="text/javascript"
         src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script type="text/javascript" src="/theme/js/link_icons.js"></script>
