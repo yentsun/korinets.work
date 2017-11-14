@@ -90,6 +90,9 @@ look like this:
 
 ... to be continued
 
+.. note::
+   **UPD**: As I dropped SenecaJS in favour of custom framework, I won't continue this article.
+
 
 .. _ExpressJS: http://expressjs.com/
 .. _SenecaJS: http://senecajs.org/
