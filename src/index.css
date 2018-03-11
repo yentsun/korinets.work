@@ -1,5 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html {
+    background: #000000;
+    font-family: 'VT323', monospace;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
 }

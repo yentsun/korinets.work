@@ -1,0 +1,53 @@
+.card {
+    height: 100px;
+    width: 300px;
+    background: black;
+    border-bottom: 1px dashed green;
+    display: grid;
+    text-decoration: none;
+    color: green;
+    position: relative;
+    font-size: small;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    top: -2px;
+    /*box-shadow: 0 4px 5px rgba(0,0,0,0.2);*/
+}
+
+.card .thumb {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card article {
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0 0 0 9px;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.card p {
+}
+
+/* typography */
+h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
