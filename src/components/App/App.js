@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import data from './data'
+import data from '../../data';
 import Card from '../Card/Card';
 import './App.css';
 

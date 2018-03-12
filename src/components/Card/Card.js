@@ -8,28 +8,31 @@ export default class Card extends Component {
         super(props);
         this.error = null;
         this.state = {
-            loading: true
+            loading: true,
+            data: null
         };
     }
 
     async componentDidMount() {
 
-        const {api, data} = this.props;
-        let d;
+        const {apis, data} = this.props;
+        let fetchedData;
 
-        if (api && typeof api.fetcher === 'function' && !data) {
+        if (apis && !data) {
             try {
-                d = await api.fetcher(...api.args);
-                console.log(d)
+                const reqList = apis.map(([func, args]) => {
+                    return func(...args);
+                });
+                const dataSets = await Promise.all(reqList);
+                fetchedData = Object.assign(...dataSets);
+
             } catch (error) {
                 console.log(error);
                 this.error = error;
             }
-        } else {
-            d = data;
         }
-        this.setState({loading: false, data: d});
 
+        this.setState({loading: false, data: fetchedData || data});
     }
 
     render() {
