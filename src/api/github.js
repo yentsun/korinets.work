@@ -22,7 +22,7 @@ export const githubEvents = axios.create({
 });
 
 githubEvents.interceptors.response.use((res) => {
-    const {type, repo: {name}, created_at, payload, actor} = res.data[1];
+    const {type, repo: {name}, created_at, payload, actor} = res.data[0];
     let actionType;
     let actionString;
     switch (type) {

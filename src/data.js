@@ -1,5 +1,6 @@
 import so from './api/so';
 import {githubUsers, githubEvents} from './api/github';
+import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
 
 
 export default [
@@ -35,6 +36,18 @@ export default [
         ],
         href: "https://github.com/yentsun",
         thumb: "github.gif"
+    },
+
+    {
+        id: 'lastfm',
+        data: null,
+        apis: [
+            [lastfmUser.get, []],
+            [lastfmUserArtists.get, []],
+            [lastfmRecent.get, []],
+        ],
+        href: "https://www.last.fm/user/yentsun",
+        thumb: "lastfm.gif"
     }
 
 ]
