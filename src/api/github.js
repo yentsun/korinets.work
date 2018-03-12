@@ -22,29 +22,39 @@ export const githubEvents = axios.create({
 });
 
 githubEvents.interceptors.response.use((res) => {
-    const {type, repo: {name}, created_at, payload} = res.data[0];
+    const {type, repo: {name}, created_at, payload, actor} = res.data[1];
     let actionType;
-    let action;
+    let actionString;
     switch (type) {
         case 'PushEvent':
             actionType = 'push';
-            const {message, ref} = payload.commits;
-            action = `#${ref} ${message}`;
+            const {message, sha} = payload.commits[0];
+            actionString = `#${sha.slice(0, 7)} ${message} by ${actor.login}`;
             break;
         case 'IssuesEvent':
-            actionType = 'new issue';
             const {number, title} = payload.issue;
-            action = `#${number} ${title}`;
+            actionType = `issue ${payload.action}`;
+            actionString = `#${number} ${title} by ${actor.login}`;
+            break;
+        case 'WatchEvent':
+            const {action} = payload;
+            actionType = `watch`;
+            actionString = `${action} by ${actor.login}`;
+            break;
+        case 'CreateEvent':
+            const {ref, ref_type} = payload;
+            actionType = `create`;
+            actionString = `${ref_type} "${ref}" by ${actor.login}`;
             break;
         default:
-            actionType = 'unknown';
-            action = `???`;
+            actionType = type;
+            actionString = `???`;
             break;
     }
 
     return {
         content: `${name}:
-                  [${actionType}] ${action}
-                  ${timeSince(new Date(created_at))} ago`
+                  [${actionType}] ${actionString}
+                  (${timeSince(new Date(created_at))} ago)`
     };
 });
