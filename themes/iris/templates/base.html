@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{% block lang %}{{DEFAULT_LANG}}{% endblock %}">
+<head>
+    <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+    {% block noindex %}{% endblock %}
+    <meta name="description" content="{% block description %}
+        A personal blog of Max Korinets, another oldschool webdev
+                        {% endblock %}">
+    <meta name="keywords" content="{% block keywords %}webdev, personal blog{% endblock %}">
+    <meta name="author" content="{% if article %}{{article.author}}{% else %}Max Korinets{% endif %}">
+    <link rel="icon" href="{{ SITEURL }}/theme/favicon.ico" type="image/x-con" />
+
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=The+Girl+Next+Door"
+          rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
+    <meta charset="utf-8" />
+
+    {% if FEED_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+    <!-- Javascript-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-53332840-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body id="index" class="home">
+<header id="banner" class="body">
+    <div class="banner">
+        <a href="{{ SITEURL }}">{{SITENAME}} <strong>{{ SITESUBTITLE }}</strong></a>
+    </div>
+
+</header><!-- /#banner -->
+<nav id="main">
+    {% if article or articles_page %}
+    <span>log</span>
+    {% else %}
+    <a href="/">log</a>
+    {% endif %}
+    <span class="bullet">⚫</span>
+    {% for p in pages|sort(attribute='sort_order') %}
+    {% if p != page %}
+    <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+    {% else %}
+    <span>{{ p.title }}</span>
+    {% endif %}
+    {% if p != pages|sort(attribute='sort_order')|last %}
+    <span class="bullet">⚫</span>
+    {% endif %}
+    {% endfor %}
+</nav>
+
+{% if article or articles_page %}
+<nav id="categories">
+    {% for cat, articles in categories|sort(reverse=True) %}
+    {% if cat != category %}
+    <a href="{{ SITEURL }}/{{cat.url}}">
+        {{cat}} <small>({{articles|length}})</small>
+    </a>
+    {% else %}
+    <span>{{cat}} <small>({{articles|length}})</small></span>
+    {% endif %}
+    {% if (cat, articles) != categories|sort(reverse=True)|last %}
+    <span class="bullet">⚫</span>
+    {% endif %}
+    {% endfor %}
+</nav>
+{% endif %}
+<div class="box">
+    {% block content %}
+    {% endblock %}
+    <hr/>
+    <footer id="contentinfo" class="footer">
+        <div>
+            &copy; <a href="{{SITEURL}}/pages/about.html">{{AUTHOR}}</a> 2017
+        </div>
+        <div>
+            Works on <a href="http://getpelican.com/">Pelican</a>
+            and <a href="http://python.org">Python</a>.
+            Theme by <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a>
+        </div>
+        <div>
+            <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">The title</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">the code</a> fonts by Google
+        </div>
+        <div class="social">
+            {% for name, link in SOCIAL %}
+            <a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a>
+            {% endfor %}
+            {% if EMAIL%}
+            <a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a>
+            {% endif %}
+        </div>
+    </footer><!-- /#contentinfo -->
+</div>
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="/theme/js/link_icons.js"></script>
+</body>
+</html>

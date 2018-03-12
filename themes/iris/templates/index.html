@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}
+    {% if articles_page.number > 1 %}
+    Page {{articles_page.number}} - {{super()}}
+    {% else %}
+    {{super()}}
+    {% endif %}
+{% endblock %}
+{% block noindex %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section id="content">
+<div class="posts">
+    <ol id="post-list">
+    {% for article in articles_page.object_list %}        
+        <li>
+            <article class="archive">
+                <header> 
+                    <h2 class="archive-entry-title">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a>
+                    </h2> 
+                </header>
+                <footer class="post-info">
+                    <abbr>
+                      <i class="fa fa-calendar-o"></i> {{ article.locale_date }}
+                      {% if article.author %}
+                         | author: <i class="fa fa-user"></i> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+                      {% endif %}  
+                    </abbr>
+                    <div class="entry-summary"> {{ article.abstr }}
+                    <a href="{{ SITEURL }}/{{ article.url }}">>>></a></div>
+                </footer><!-- /.post-info -->
+                <!-- /.entry-content -->
+            </article>
+        </li>
+    {% endfor %}
+    </ol><!-- /#posts-list -->
+</div>
+{% include 'pagination.html' %}
+</section><!-- /#content -->
+{% endblock content %}

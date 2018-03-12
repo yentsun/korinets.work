@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block lang %}{{article.lang}}{% endblock %}
+{% block title %}{{article.title}} - {{SITENAME}}{% endblock %}
+{% block keywords %}{{article.tags|join(', ')}}{% endblock %}
+{% block content %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top banner -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1058172821678820"
+     data-ad-slot="8946112394"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<section itemscope itemtype="http://schema.org/Article" id="content" class="body">
+  <header class="post">
+    <h2 itemprop="name" class="entry-title">
+      {{ article.title }}
+    </h2>
+
+  </header>
+  <footer class="post-info">
+      <abbr>
+          <i class="fa fa-calendar-o"></i>
+          <span itemprop="datePublished" content="{{ article.date }}">
+              {{ article.locale_date }}
+          </span>
+          {% if article.tags %}
+          | tags:
+              {% for tag in article.tags %}
+                  <a href="/tag/{{ tag }}.html">
+                      <i class="fa fa-tag"></i> {{ tag }}</a>
+                 {% if not loop.last %}, {% endif %}
+              {% endfor %}
+          {% endif %}
+          {% if article.author %}
+          |  author: <i class="fa fa-user"></i>
+          <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ article.author }}</span></span>
+          </a>
+          {% endif %}
+          {% if article.translations %}|
+          {% import 'translations.html' as translations with context %}
+          {{ translations.translations_for(article) }}
+          {% endif %}
+      </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p itemprop="about" id="abstr">
+        {% block description %}{{article.abstr}}{% endblock %}
+    </p>
+    <div itemprop="articleBody">
+    {{ article.content }}
+    </div>
+  </div><!-- /.entry-content -->
+{% include 'disqus.html' %}
+</section>
+{% endblock %}
