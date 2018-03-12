@@ -1,1 +1,0 @@
-This is a round up blog and website for Max Korinets, yet another webdev.
