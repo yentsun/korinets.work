@@ -39,9 +39,9 @@
 }
 
 /* typography */
-h1 {
-    font-size: 20px;
-    margin: 0;
+.card h1 {
+    font-size: 22px;
+    margin: 0 0 3px 0;
 }
 
 .card span {

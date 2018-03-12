@@ -14,35 +14,42 @@ export default class Card extends Component {
 
     async componentDidMount() {
 
-        const {fetcher, data} = this.props;
+        const {api, data} = this.props;
+        let d;
 
-        if (typeof fetcher === 'function' && !data) {
+        if (api && typeof api.fetcher === 'function' && !data) {
             try {
-                this.data = await fetcher();
+                d = await api.fetcher(...api.args);
+                console.log(d)
             } catch (error) {
+                console.log(error);
                 this.error = error;
             }
         } else {
-            this.data = data;
+            d = data;
         }
-        this.setState({loading: false});
+        this.setState({loading: false, data: d});
 
     }
 
     render() {
 
-        const {href, thumb, data: {major, minor, content}} = this.props;
-        const {loading} = this.state;
+        const {href, thumb} = this.props;
+        const {loading, data} = this.state;
 
         return loading ? (<div className="card"><h1>Loading...</h1></div>) : (
             <div>
                 <a href={href} className="card">
                     <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
-                    <article>
-                        <h1>{major}</h1>
-                        <span>{minor}</span>
-                        <p>{content}</p>
-                    </article>
+                    {data ? (
+                        <article>
+                            <h1>{data.major}</h1>
+                            <span>{data.minor}</span>
+                            <p>{data.content}</p>
+                        </article>
+                    ) : (
+                        <article><h1>No data!</h1></article>
+                    )}
                 </a>
             </div>
         );

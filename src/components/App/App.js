@@ -4,19 +4,15 @@ import Card from '../Card/Card';
 import './App.css';
 
 
-class App extends Component {
-
-
+export default class App extends Component {
 
     render() {
         return (
             <div className="band">
-                {data.map((card, index) => {
-                    return <Card key={index} {...card}/>
+                {data.map((card) => {
+                    return <Card key={card.id} {...card}/>
                 })};
             </div>
         );
     }
 }
-
-export default App;
