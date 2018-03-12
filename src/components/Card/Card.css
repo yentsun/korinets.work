@@ -14,7 +14,8 @@
 
 .card:hover {
     top: -2px;
-    /*box-shadow: 0 4px 5px rgba(0,0,0,0.2);*/
+    color: gold;
+    border-bottom: 1px dashed gold;
 }
 
 .card .thumb {
@@ -24,6 +25,11 @@
     width: 100px;
     background-size: cover;
     background-position: center center;
+    background-color: green;
+}
+
+.card:hover .thumb {
+    background-color: gold;
 }
 
 .card article {
