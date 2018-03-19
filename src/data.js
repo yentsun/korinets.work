@@ -54,7 +54,7 @@ export default [
         id: 'upwork',
         data: {
             major: '976h worked',
-            minor: 'Prototype / MVP Engineer',
+            minor: 'Full-stack Engineer',
             content: '100% job success rate; $26.00/hour; $20k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
