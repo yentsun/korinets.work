@@ -38,7 +38,7 @@ export default [
         ],
         href: "https://github.com/yentsun",
         thumb: "github.gif",
-        priority: 50
+        priority: 70
     },
 
     {
