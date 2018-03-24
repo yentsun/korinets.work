@@ -14,7 +14,8 @@ export default [
             "behind it most of the times."
         },
         href: null,
-        thumb: "userpic.gif"
+        thumb: "userpic.gif",
+        priority: 100
     },
 
     {
@@ -24,7 +25,8 @@ export default [
             [so.get, ['/users/216042']]
         ],
         href: "https://stackoverflow.com/users/216042/yentsun",
-        thumb: "so.gif"
+        thumb: "so.gif",
+        priority: 10
     },
 
     {
@@ -35,7 +37,8 @@ export default [
             [githubEvents.get, ['/yentsun/events']]
         ],
         href: "https://github.com/yentsun",
-        thumb: "github.gif"
+        thumb: "github.gif",
+        priority: 50
     },
 
     {
@@ -47,7 +50,8 @@ export default [
             [lastfmRecent.get, []],
         ],
         href: "https://www.last.fm/user/yentsun",
-        thumb: "lastfm.gif"
+        thumb: "lastfm.gif",
+        priority: 0
     },
 
     {
@@ -58,7 +62,8 @@ export default [
             content: '100% job success rate; $26.00/hour; $20k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
-        thumb: "upwork.gif"
+        thumb: "upwork.gif",
+        priority: 60
     }
 
 ]
