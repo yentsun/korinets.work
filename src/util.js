@@ -25,3 +25,20 @@ export const timeSince = (date) => {
 
     return Math.floor(seconds) + " seconds";
 };
+
+
+export const average = (values) => {
+
+    const sum = values.reduce((a, b) => b += a);
+    return sum / values.length;
+};
+
+
+export const median = (values) => {
+
+    values.sort((a,b) => a - b);
+    const half = Math.floor(values.length/2);
+    return (values.length % 2) ?
+        values[half] :
+        (values[half-1] + values[half]) / 2.0;
+};

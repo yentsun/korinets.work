@@ -1,6 +1,7 @@
 import so from './api/so';
 import {githubUsers, githubEvents} from './api/github';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
+import {npmRegistry} from './api/npm';
 
 
 export default [
@@ -39,6 +40,16 @@ export default [
         href: "https://github.com/yentsun",
         thumb: "github.gif",
         priority: 70
+    },
+    {
+        id: 'npm',
+        data: null,
+        apis: [
+            [npmRegistry.get, ['/search?text=maintainer:yentsun']]
+        ],
+        href: "https://www.npmjs.com/~yentsun",
+        thumb: "npm.gif",
+        priority: 65
     },
 
     {
