@@ -7,6 +7,7 @@ import './App.css';
 export default class App extends Component {
 
     render() {
+        data.sort((a, b) => b.priority - a.priority);
         return (
             <div className="band">
                 {data.map((card) => {
