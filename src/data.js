@@ -9,10 +9,10 @@ export default [
     {
         id: "static",
         data: {
-            "major": "Max Korinets",
+            "major": "Maksim Korinets",
             "minor": "software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
-            "behind it most of the times."
+            "behind it most of the time."
         },
         href: null,
         thumb: "userpic.gif",

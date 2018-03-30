@@ -7,10 +7,7 @@ export const npmRegistry = axios.create({
 });
 
 npmRegistry.interceptors.response.use((res) => {
-    const {
-        total,
-        objects
-    } = res.data;
+    const {total, objects} = res.data;
     const packagelist = objects.map((o) => o.package.name).join(', ');
     const packageScores = objects.map((o) => o.score.final);
     return {
