@@ -7,16 +7,30 @@ import {npmRegistry} from './api/npm';
 export default [
 
     {
-        id: "static",
+        id: "bio",
         data: {
-            "major": "Max Korinets",
+            "major": "Maksim Korinets",
             "minor": "software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
-            "behind it most of the times."
+                       "behind it most of the time."
         },
         href: null,
         thumb: "userpic.gif",
         priority: 100
+    },
+
+    {
+        id: "email",
+        data: {
+            "major": "mkorinets@gmail.com",
+            "minor": "hangouts on",
+            "content": "Please, start communication with an introductory email." +
+                       "I do like not being disturbed and will respect that."
+
+        },
+        href: "mailto:mkorinets@gmail.com",
+        thumb: "gmail.gif",
+        priority: 0
     },
 
     {
@@ -62,7 +76,7 @@ export default [
         ],
         href: "https://www.last.fm/user/yentsun",
         thumb: "lastfm.gif",
-        priority: 0
+        priority: 10
     },
 
     {

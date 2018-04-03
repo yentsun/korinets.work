@@ -1,6 +1,4 @@
 .band {
-  width: 90%;
-  max-width: 1240px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
