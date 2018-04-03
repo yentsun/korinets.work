@@ -7,13 +7,13 @@
 
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
   .band {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1200px) {
   .band {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

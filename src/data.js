@@ -24,8 +24,8 @@ export default [
         data: {
             "major": "mkorinets@gmail.com",
             "minor": "hangouts on",
-            "content": "Please, start communication with an introductory email." +
-                       "I do like not being disturbed and will respect that."
+            "content": "Please, start communication with an introductory email " +
+                       "or message. I will respect that very much."
 
         },
         href: "mailto:mkorinets@gmail.com",
