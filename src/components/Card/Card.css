@@ -1,6 +1,5 @@
 .card {
     height: 100px;
-    width: 300px;
     background: black;
     border-bottom: 1px dashed green;
     display: grid;
