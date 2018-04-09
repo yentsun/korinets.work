@@ -24,8 +24,8 @@ export default [
         data: {
             "major": "mkorinets@gmail.com",
             "minor": "hangouts on",
-            "content": "Please, start communication with an introductory email " +
-                       "or message. I will respect that very much."
+            "content": "Its a good way to start communication with an introductory email " +
+                       "or message. Respect the working vibe."
 
         },
         href: "mailto:mkorinets@gmail.com",
@@ -83,8 +83,8 @@ export default [
         id: 'upwork',
         data: {
             major: '976h worked',
-            minor: 'Full-stack Engineer',
-            content: '100% job success rate; $26.00/hour; $20k+ total earned'
+            minor: 'Full-stack JS Developer',
+            content: '100% job success rate; $24.00/hour; $20k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
