@@ -2,6 +2,7 @@ import so from './api/so';
 import {githubUsers, githubEvents} from './api/github';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
 import {npmRegistry} from './api/npm';
+import {generatePassword} from './util';
 
 
 export default [
@@ -88,6 +89,19 @@ export default [
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
+        priority: 60
+    },
+
+    {
+        id: 'password',
+        data: {
+            major: 'Generate password',
+            minor: 'experimental, strong',
+            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs - basically most of unicode chars.' +
+                     " You won't be able to type it or see every character correctly."
+        },
+        href: generatePassword,
+        thumb: "password.gif",
         priority: 60
     }
 

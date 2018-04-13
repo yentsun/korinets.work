@@ -39,10 +39,13 @@ export default class Card extends Component {
 
         const {href, thumb} = this.props;
         const {loading, data} = this.state;
+        const link = (typeof href === "string") ? href : null;
+        const clickHandler = (typeof href === "function") ? href : null;
+        if (clickHandler) clickHandler.bind(this);
 
         return loading ? (<div className="card"><h1>Loading...</h1></div>) : (
             <div>
-                <a href={href} className="card">
+                <a href={link} onClick={clickHandler} className="card">
                     <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
                     {data ? (
                         <article>

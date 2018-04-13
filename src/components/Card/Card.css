@@ -57,3 +57,10 @@
     letter-spacing: .05em;
     margin: 2em 0 0 0;
 }
+
+.card textarea {
+    background-color: rgba(5, 5, 5, 0.91);
+    border: 1px dashed yellow;
+    width: 300px;
+    color: red;
+}
