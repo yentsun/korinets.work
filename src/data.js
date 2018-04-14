@@ -98,7 +98,7 @@ export default [
             major: 'Generate password',
             minor: 'experimental, strong',
             content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs - basically most of unicode chars.' +
-                     " You won't be able to type it or see every character correctly."
+                     " Experimental and unreasonably secure."
         },
         href: generatePassword,
         thumb: "password.gif",
