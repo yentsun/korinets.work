@@ -49,8 +49,8 @@ export const generatePassword = (e) => {
     if (p) {
         console.log('generating password...');
         const array1 = Array.from(crypto.getRandomValues(new Uint8Array(15)));
-        const array2 = Array.from(crypto.getRandomValues(new Uint16Array(9)));
-        const array3 = Array.from(crypto.getRandomValues(new Uint32Array(5)));
+        const array2 = Array.from(crypto.getRandomValues(new Uint16Array(5)));
+        const array3 = Array.from(crypto.getRandomValues(new Uint32Array(3)));
         const array = [...array1,...array2, ...array3]
             .sort(() => Math.random() - 0.5);
         const password = array.map((b) => {
