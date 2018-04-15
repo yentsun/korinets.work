@@ -2,7 +2,7 @@ import so from './api/so';
 import {githubUsers, githubEvents} from './api/github';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
 import {npmRegistry} from './api/npm';
-import {generatePassword} from './util';
+import {generatePassword, timeSince} from './util';
 
 
 export default [
@@ -97,11 +97,26 @@ export default [
         data: {
             major: 'Generate password',
             minor: 'experimental, strong',
-            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs - basically most of unicode chars.' +
+            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs ' +
+                     '- basically most of unicode chars.' +
                      " Experimental and unreasonably secure."
         },
         href: generatePassword,
         thumb: "password.gif",
+        priority: 60
+    },
+
+    {
+        id: 'venture',
+        data: {
+            major: 'Venture API',
+            minor: 'current project',
+            content: 'A game for API developers of all levels. You mine and ' +
+                     'produce resources, transport, trade, etc. with API calls. '+
+                     `Started at Dec 3, 2017 (${timeSince(new Date('2017-12-03'))} ago)`
+        },
+        href: 'https://github.com/orgs/venture-api/projects/1',
+        thumb: "venture.gif",
         priority: 60
     }
 
