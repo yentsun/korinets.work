@@ -1,8 +1,8 @@
-import so from './api/so';
-import {githubUsers, githubEvents} from './api/github';
-import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
-import {npmRegistry} from './api/npm';
-import {generatePassword, timeSince} from './util';
+import so from '../../api/so';
+import {githubUsers, githubEvents} from '../../api/github';
+import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
+import {npmRegistry} from '../../api/npm';
+import {generatePassword, timeSince} from '../../util';
 
 
 export default [
@@ -11,7 +11,7 @@ export default [
         id: "bio",
         data: {
             "major": "Maksim Korinets",
-            "minor": "software engineer",
+            "minor": "freelance software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
                        "behind it most of the time."
         },
