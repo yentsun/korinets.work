@@ -3,7 +3,7 @@ import {timeSince} from '../util';
 
 
 export const lastfmUser = axios.create({
-    baseURL: 'http://ws.audioscrobbler.com/2.0',
+    baseURL: 'https://ws.audioscrobbler.com/2.0',
     params: {
         method: 'user.getinfo',
         user: 'yentsun',
@@ -22,7 +22,7 @@ lastfmUser.interceptors.response.use((res) => {
 });
 
 export const lastfmUserArtists = axios.create({
-    baseURL: 'http://ws.audioscrobbler.com/2.0',
+    baseURL: 'https://ws.audioscrobbler.com/2.0',
     params: {
         method: 'user.getTopArtists',
         user: 'yentsun',
@@ -39,7 +39,7 @@ lastfmUserArtists.interceptors.response.use((res) => {
 });
 
 export const lastfmRecent = axios.create({
-    baseURL: 'http://ws.audioscrobbler.com/2.0',
+    baseURL: 'https://ws.audioscrobbler.com/2.0',
     params: {
         method: 'user.getRecentTracks',
         user: 'yentsun',
