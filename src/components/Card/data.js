@@ -85,7 +85,7 @@ export default [
         data: {
             major: '976h worked',
             minor: 'Full-stack JS Developer',
-            content: '100% job success rate; $24.00/hour; $20k+ total earned'
+            content: '100% job success rate; $40.00/hour; $20k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",

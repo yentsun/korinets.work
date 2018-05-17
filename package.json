@@ -12,6 +12,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "deploy": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket korinets.name"
+    "deploy": "npx fly production"
   }
 }
