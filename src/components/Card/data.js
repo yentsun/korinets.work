@@ -1,8 +1,8 @@
-import so from './api/so';
-import {githubUsers, githubEvents} from './api/github';
-import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
-import {npmRegistry} from './api/npm';
-import {generatePassword, timeSince} from './util';
+import so from '../../api/so';
+import {githubUsers, githubEvents} from '../../api/github';
+import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
+import {npmRegistry} from '../../api/npm';
+import {generatePassword, timeSince} from '../../util';
 
 
 export default [
@@ -11,7 +11,7 @@ export default [
         id: "bio",
         data: {
             "major": "Maksim Korinets",
-            "minor": "software engineer",
+            "minor": "freelance software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
                        "behind it most of the time."
         },
@@ -85,7 +85,7 @@ export default [
         data: {
             major: '976h worked',
             minor: 'Full-stack JS Developer',
-            content: '100% job success rate; $24.00/hour; $20k+ total earned'
+            content: '100% job success rate; $40.00/hour; $20k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
