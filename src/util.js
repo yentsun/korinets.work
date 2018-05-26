@@ -50,7 +50,9 @@ export const median = (values) => {
 export const requestPassword = (e) => {
 
     const client = new ApolloClient({
-        uri: "http://localhost:8000/graphql"
+        uri: process.env.NODE_ENV === 'production'
+            ? 'https://back.korinets.name/graphql'
+            : "http://localhost:8000/graphql"
     });
 
     let p = e.target.parentElement.getElementsByTagName('p')[0];
