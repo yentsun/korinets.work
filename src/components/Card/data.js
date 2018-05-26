@@ -2,7 +2,7 @@ import so from '../../api/so';
 import {githubUsers, githubEvents} from '../../api/github';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
 import {npmRegistry} from '../../api/npm';
-import {generatePassword, timeSince} from '../../util';
+import {requestPassword, timeSince} from '../../util';
 
 
 export default [
@@ -96,12 +96,11 @@ export default [
         id: 'password',
         data: {
             major: 'Generate password',
-            minor: 'experimental, strong',
-            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs ' +
-                     '- basically most of unicode chars.' +
-                     " Experimental and unreasonably secure."
+            minor: 'very strong, 20 chars',
+            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs.' +
+                     " Well tested in real life and reasonably secure."
         },
-        href: generatePassword,
+        href: requestPassword,
         thumb: "password.gif",
         priority: 60
     },

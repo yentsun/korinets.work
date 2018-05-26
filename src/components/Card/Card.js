@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './Card.css';
 
 
-export default class Card extends Component {
+export default class extends Component {
 
     constructor(props) {
         super(props);
