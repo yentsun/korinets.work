@@ -13,7 +13,7 @@ export default [
             "major": "Maksim Korinets",
             "minor": "freelance software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
-                       "behind it most of the time."
+                       "behind it (most of the time)."
         },
         href: null,
         thumb: "userpic.gif",
