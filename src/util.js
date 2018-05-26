@@ -1,3 +1,7 @@
+import ApolloClient from "apollo-boost";
+import gql from "graphql-tag";
+
+
 export const timeSince = (date) => {
 
     const seconds = Math.floor((new Date() - date) / 1000);
@@ -43,30 +47,33 @@ export const median = (values) => {
         (values[half-1] + values[half]) / 2.0;
 };
 
-export const generatePassword = (e) => {
+export const requestPassword = (e) => {
+
+    const client = new ApolloClient({
+        uri: process.env.NODE_ENV === 'production'
+            ? 'https://back.korinets.name/graphql'
+            : "http://localhost:8000/graphql"
+    });
 
     let p = e.target.parentElement.getElementsByTagName('p')[0];
     if (p) {
-        console.log('generating password...');
-        const array1 = Array.from(crypto.getRandomValues(new Uint8Array(15)));
-        const array2 = Array.from(crypto.getRandomValues(new Uint16Array(5)));
-        const array3 = Array.from(crypto.getRandomValues(new Uint32Array(3)));
-        const array = [...array1,...array2, ...array3]
-            .sort(() => Math.random() - 0.5);
-        const password = array.map((b) => {
-            return String.fromCharCode(b);
-        }).join('');
-        p.innerText = '';
-        const textArea = p.getElementsByTagName('textarea');
-        const passwordHolder = textArea.length
-            ? textArea[0]
-            : document.createElement("textarea");
-        p.appendChild(passwordHolder);
-        passwordHolder.innerText = `${password}`;
-        passwordHolder.select();
-        document.execCommand('copy');
-        document.getSelection().removeAllRanges();
-        console.log('done, copied to clipboard');
+        console.log('requesting password...');
+        client
+        .query({query: gql`{password}`})
+        .then(result => {
+            p.innerText = '';
+            const textArea = p.getElementsByTagName('textarea');
+            const passwordHolder = textArea.length
+                ? textArea[0]
+                : document.createElement("textarea");
+            p.appendChild(passwordHolder);
+            passwordHolder.innerText = `${result.data.password}`;
+            passwordHolder.addEventListener('focus', (e) => {
+                passwordHolder.select();
+                document.execCommand('copy');
+                console.log('copied');
+            }, false );
+            console.log('done', result.data.password);
+        });
     }
-
 };
