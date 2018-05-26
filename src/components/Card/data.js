@@ -13,7 +13,7 @@ export default [
             "major": "Maksim Korinets",
             "minor": "freelance software engineer",
             "content": "Don't let simplicity fool you: there is hard work " +
-                       "behind it most of the time."
+                       "behind it (most of the time)."
         },
         href: null,
         thumb: "userpic.gif",
@@ -117,6 +117,19 @@ export default [
         href: 'https://github.com/orgs/venture-api/projects/1',
         thumb: "venture.gif",
         priority: 60
+    },
+
+    {
+        id: 'construction',
+        data: {
+            major: 'v3.5.0',
+            minor: 'Under construction',
+            content: 'This website is being constantly developed. I add new cards, ' +
+                     'backend APIs, etc. Click to see the repos.'
+        },
+        href: 'https://github.com/orgs/korinets-name/projects',
+        thumb: "construction.gif",
+        priority: 0
     }
 
 ]
