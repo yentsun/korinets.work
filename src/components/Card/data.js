@@ -114,7 +114,7 @@ export default [
                      'produce resources, transport, trade, etc. with API calls. '+
                      `Started at Dec 3, 2017 (${timeSince(new Date('2017-12-03'))} ago)`
         },
-        href: 'https://github.com/orgs/venture-api/projects/1',
+        href: 'https://gitlab.com/venture-api',
         thumb: "venture.gif",
         priority: 60
     },
