@@ -114,7 +114,7 @@ export default [
                      'produce resources, transport, trade, etc. with API calls. '+
                      `Started at Dec 3, 2017 (${timeSince(new Date('2017-12-03'))} ago)`
         },
-        href: 'https://gitlab.com/venture-api',
+        href: 'https://gitlab.com/groups/venture-api/-/boards?=',
         thumb: "venture.gif",
         priority: 60
     },
@@ -127,7 +127,7 @@ export default [
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the repos.'
         },
-        href: 'https://gitlab.com/korinets-name',
+        href: 'https://gitlab.com/groups/korinets-name/-/boards?=',
         thumb: "construction.gif",
         priority: 0
     }
