@@ -51,7 +51,7 @@ export const requestPassword = (e) => {
 
     const client = new ApolloClient({
         uri: process.env.NODE_ENV === 'production'
-            ? 'https://back.korinets.name/graphql'
+            ? 'https://korinets.name/back/graphql'
             : "http://localhost:8000/graphql"
     });
 
@@ -68,7 +68,7 @@ export const requestPassword = (e) => {
                 : document.createElement("textarea");
             p.appendChild(passwordHolder);
             passwordHolder.innerText = `${result.data.password}`;
-            passwordHolder.addEventListener('focus', (e) => {
+            passwordHolder.addEventListener('focus', () => {
                 passwordHolder.select();
                 document.execCommand('copy');
                 console.log('copied');

@@ -97,7 +97,7 @@ export default [
         data: {
             major: 'Generate password',
             minor: 'very strong, 20 chars',
-            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs.' +
+            content: 'Lowercase, uppercase, numbers, special chars, some hieroglyphs.' +
                      " Well tested in real life and reasonably secure."
         },
         href: requestPassword,
@@ -114,7 +114,7 @@ export default [
                      'produce resources, transport, trade, etc. with API calls. '+
                      `Started at Dec 3, 2017 (${timeSince(new Date('2017-12-03'))} ago)`
         },
-        href: 'https://github.com/orgs/venture-api/projects/1',
+        href: 'https://gitlab.com/venture-api',
         thumb: "venture.gif",
         priority: 60
     },
@@ -122,12 +122,12 @@ export default [
     {
         id: 'construction',
         data: {
-            major: 'v3.5.0',
+            major: 'v3.7.0',
             minor: 'Under construction',
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the repos.'
         },
-        href: 'https://github.com/orgs/korinets-name/projects',
+        href: 'https://gitlab.com/korinets-name',
         thumb: "construction.gif",
         priority: 0
     }

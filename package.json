@@ -1,20 +1,28 @@
 {
-  "name": "korinets.name",
-  "version": "3.6.0",
+  "name": "front",
+  "version": "3.7.0",
   "private": true,
+  "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
-    "apollo-boost": "^0.1.6",
+    "apollo-boost": "^0.1.10",
     "axios": "^0.18.0",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/korinets-name/korinets-name.gitlab.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https@gitlab.com:korinets-name/korinets-name.gitlab.io.git"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "deploy": "npm run build && npx fly production"
+    "deploy": "npx fly production"
   }
 }
