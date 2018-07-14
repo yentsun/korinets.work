@@ -122,12 +122,12 @@ export default [
     {
         id: 'construction',
         data: {
-            major: 'v3.6.0',
+            major: 'v3.7.0',
             minor: 'Under construction',
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the repos.'
         },
-        href: 'https://gitlab.com/korinets.name',
+        href: 'https://gitlab.com/korinets-name',
         thumb: "construction.gif",
         priority: 0
     }
