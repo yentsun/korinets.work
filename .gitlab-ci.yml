@@ -1,0 +1,18 @@
+image: node:latest # can be upgraded, depending on your node version used
+
+pages:
+  cache:
+    paths:
+    - node_modules/
+
+  stage: deploy
+  script:
+  - npm ci
+  - npm run build
+  - rm -rf public
+  - mv build public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
