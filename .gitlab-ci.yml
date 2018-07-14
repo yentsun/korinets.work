@@ -1,4 +1,4 @@
-image: node:latest # can be upgraded, depending on your node version used
+image: node:latest
 
 pages:
   cache:
@@ -14,5 +14,3 @@ pages:
   artifacts:
     paths:
     - public
-  only:
-  - master

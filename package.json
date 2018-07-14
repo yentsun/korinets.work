@@ -2,6 +2,7 @@
   "name": "korinets.name",
   "version": "3.6.0",
   "private": true,
+  "homepage": "https://korinets.name.gitlab.io/front/",
   "dependencies": {
     "apollo-boost": "^0.1.10",
     "axios": "^0.18.0",
