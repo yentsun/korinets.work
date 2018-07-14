@@ -1,6 +1,6 @@
 {
-  "name": "korinets.name front",
-  "version": "3.6.0",
+  "name": "front",
+  "version": "3.7.0",
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
