@@ -97,7 +97,7 @@ export default [
         data: {
             major: 'Generate password',
             minor: 'very strong, 20 chars',
-            content: 'Lowercase, uppercase, numbers, special chars, hieroglyphs.' +
+            content: 'Lowercase, uppercase, numbers, special chars, some hieroglyphs.' +
                      " Well tested in real life and reasonably secure."
         },
         href: requestPassword,
