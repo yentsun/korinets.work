@@ -1,5 +1,6 @@
 import so from '../../api/so';
 import {githubUsers, githubEvents} from '../../api/github';
+import {gitlabUsers, gitlabEvents} from '../../api/gitlab';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
 import {npmRegistry} from '../../api/npm';
 import {requestPassword, timeSince} from '../../util';
@@ -44,7 +45,17 @@ export default [
         thumb: "so.gif",
         priority: 10
     },
-
+    {
+        id: 'gitlab',
+        data: null,
+        apis: [
+            [gitlabUsers.get, ['?username=mkorinets']],
+            [gitlabEvents.get, ['/mkorinets/events']]
+        ],
+        href: 'https://gitlab.com/mkorinets',
+        thumb: 'gitlab.gif',
+        priority: 71
+    },
     {
         id: 'github',
         data: null,
