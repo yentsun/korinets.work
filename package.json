@@ -1,6 +1,6 @@
 {
   "name": "front",
-  "version": "3.7.4",
+  "version": "3.8.0",
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "build": "REACT_APP_VERSION=$npm_package_version react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "version": "echo $npm_package_version"
   }
 }
