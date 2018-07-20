@@ -1,6 +1,6 @@
 {
   "name": "front",
-  "version": "3.7.0",
+  "version": "3.7.1",
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
@@ -22,7 +22,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "deploy": "npx fly production"
+    "test": "react-scripts test --env=jsdom"
   }
 }
