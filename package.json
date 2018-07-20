@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
+    "ajv": "^6.5.2",
     "apollo-boost": "^0.1.10",
     "axios": "^0.18.0",
     "graphql": "^0.13.2",
