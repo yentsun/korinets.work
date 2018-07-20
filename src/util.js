@@ -51,7 +51,7 @@ export const requestPassword = (e) => {
 
     const client = new ApolloClient({
         uri: process.env.NODE_ENV === 'production'
-            ? 'https://korinets.name/back/graphql'
+            ? 'https://back.korinets.name/graphql'
             : "http://localhost:8000/graphql"
     });
 
