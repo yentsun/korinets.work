@@ -122,7 +122,7 @@ export default [
     {
         id: 'construction',
         data: {
-            major: 'v3.7.0',
+            major: process.env.REACT_APP_VERSION,
             minor: 'Under construction',
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the repos.'
