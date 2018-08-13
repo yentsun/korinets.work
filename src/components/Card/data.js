@@ -137,7 +137,7 @@ export default [
             major: process.env.REACT_APP_VERSION,
             minor: 'Under construction',
             content: 'This website is being constantly developed. I add new cards, ' +
-                     'backend APIs, etc. Click to see the repos.'
+                     'backend APIs, etc. Click to see the progress.'
         },
         href: 'https://gitlab.com/groups/korinets-name/-/boards?=',
         thumb: "construction.gif",
