@@ -94,9 +94,10 @@ export default [
     {
         id: 'upwork',
         data: {
-            major: '1389h worked',
+            major: 'Hire me!',
             minor: 'JS Engineer, CTO',
-            content: '100% rate (top rated); $35.00/hour; $30k+ total earned'
+            content: '100% rate (top rated); $35.00/hour; 1389h worked; $30k+ total earned; ' +
+                     'current: "Node.JS Micro Services Backend Sr. Developer" (May 2018 - Present)'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
