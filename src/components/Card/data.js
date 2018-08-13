@@ -94,9 +94,9 @@ export default [
     {
         id: 'upwork',
         data: {
-            major: '976h worked',
-            minor: 'Full-stack JS Developer',
-            content: '100% job success rate; $40.00/hour; $20k+ total earned'
+            major: '1389h worked',
+            minor: 'JS Engineer, CTO',
+            content: '100% rate (top rated); $35.00/hour; $30k+ total earned'
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
