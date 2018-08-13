@@ -1,16 +1,16 @@
 {
   "name": "front",
-  "version": "3.9.1",
+  "version": "3.9.2",
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
     "ajv": "^6.5.2",
-    "apollo-boost": "^0.1.10",
+    "apollo-boost": "^0.1.13",
     "axios": "^0.18.0",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-scripts": "^1.1.4"
   },
   "bugs": {
