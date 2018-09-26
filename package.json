@@ -1,17 +1,17 @@
 {
   "name": "front",
-  "version": "3.9.3",
+  "version": "3.9.4",
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
-    "ajv": "^6.5.2",
-    "apollo-boost": "^0.1.13",
+    "ajv": "^6.5.4",
+    "apollo-boost": "^0.1.16",
     "axios": "^0.18.0",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "^1.1.4"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^1.1.5"
   },
   "bugs": {
     "url": "https://gitlab.com/korinets-name/korinets-name.gitlab.io/issues"

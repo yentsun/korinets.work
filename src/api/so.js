@@ -13,7 +13,6 @@ const so = axios.create({
 so.interceptors.response.use((res) => {
     const {
         reputation,
-        age,
         accept_rate,
         last_access_date,
         reputation_change_month,
@@ -27,9 +26,7 @@ so.interceptors.response.use((res) => {
     return {
         major: reputation,
         minor: `🔶️ ${gold}   🔵️ ${silver}   🔴️ ${bronze}`,
-        content: `age: ${age}; accept rate: ${accept_rate}  
-                  reputation change (month): ${reputation_change_month}    
-                  last seen: ${timeSince(lastSeen)} ago`
+        content: `accept rate: ${accept_rate}%; reputation change (month): ${reputation_change_month}; last seen: ${timeSince(lastSeen)} ago`
     };
 });
 
