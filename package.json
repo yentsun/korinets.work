@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
-    "ajv": "^6.5.4",
-    "apollo-boost": "^0.1.16",
+    "ajv": "^6.7.0",
+    "apollo-boost": "^0.1.27",
     "axios": "^0.18.0",
     "graphql": "^0.13.2",
-    "graphql-tag": "^2.9.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "graphql-tag": "^2.10.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-scripts": "^1.1.5"
   },
   "bugs": {
