@@ -77,3 +77,34 @@ export const requestPassword = (e) => {
         });
     }
 };
+
+export const requestUUID = (e) => {
+
+    const client = new ApolloClient({
+        uri: process.env.NODE_ENV === 'production'
+            ? 'https://back.korinets.name/graphql'
+            : "http://localhost:8000/graphql"
+    });
+
+    let p = e.target.parentElement.getElementsByTagName('p')[0];
+    if (p) {
+        console.log('requesting UUID...');
+        client
+        .query({query: gql`{uuid}`})
+        .then(result => {
+            p.innerText = '';
+            const textArea = p.getElementsByTagName('textarea');
+            const passwordHolder = textArea.length
+                ? textArea[0]
+                : document.createElement("textarea");
+            p.appendChild(passwordHolder);
+            passwordHolder.innerText = `${result.data.uuid}`;
+            passwordHolder.addEventListener('focus', () => {
+                passwordHolder.select();
+                document.execCommand('copy');
+                console.log('copied');
+            }, false );
+            console.log('done', result.data.uuid);
+        });
+    }
+};

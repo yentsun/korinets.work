@@ -3,7 +3,7 @@ import {githubUsers, githubEvents} from '../../api/github';
 import {gitlabUsers, gitlabEvents} from '../../api/gitlab';
 import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
 import {npmRegistry} from '../../api/npm';
-import {requestPassword, timeSince} from '../../util';
+import {requestPassword, requestUUID, timeSince} from '../../util';
 
 
 export default [
@@ -113,6 +113,18 @@ export default [
         },
         href: requestPassword,
         thumb: "password.gif",
+        priority: 60
+    },
+
+    {
+        id: 'uuid',
+        data: {
+            major: 'Generate UUID',
+            minor: 'version 4 (random)',
+            content: 'Just for development purposes, nothing special'
+        },
+        href: requestUUID,
+        thumb: "uuid.gif",
         priority: 60
     },
 
