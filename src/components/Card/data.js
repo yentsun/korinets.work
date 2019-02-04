@@ -96,7 +96,7 @@ export default [
         data: {
             major: 'Hire me!',
             minor: 'JS Engineer, CTO',
-            content: '100% rate (top rated); $35.00/hour; 13 jobs; 1590h worked; $30k+ total earned; '
+            content: '100% rate (top rated); $35.00/hour; 13 jobs; 1987h worked; $50k+ total earned; '
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
