@@ -1,9 +1,9 @@
-import so from '../../api/so';
-import {githubUsers, githubEvents} from '../../api/github';
-import {gitlabUsers, gitlabEvents} from '../../api/gitlab';
-import {lastfmUser, lastfmRecent, lastfmUserArtists} from '../../api/lastfm';
-import {npmRegistry} from '../../api/npm';
-import {requestPassword, requestUUID, timeSince} from '../../util';
+import so from './api/so';
+import {githubUsers, githubEvents} from './api/github';
+import {gitlabUsers, gitlabEvents} from './api/gitlab';
+import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
+import {npmRegistry} from './api/npm';
+import {requestPassword, timeSince} from './util';
 
 
 export default [
@@ -96,7 +96,7 @@ export default [
         data: {
             major: 'Hire me!',
             minor: 'JS Engineer, CTO',
-            content: '100% rate (top rated); $35.00/hour; 13 jobs; 1987h worked; $50k+ total earned; '
+            content: '100% rate (top rated); $35.00/hour; 13 jobs; 2684h worked; $70k+ total earned; '
         },
         href: "https://www.upwork.com/o/profiles/users/_~0140fc4962d00eda15/",
         thumb: "upwork.gif",
@@ -113,18 +113,6 @@ export default [
         },
         href: requestPassword,
         thumb: "password.gif",
-        priority: 60
-    },
-
-    {
-        id: 'uuid',
-        data: {
-            major: 'Generate UUID',
-            minor: 'version 4 (random)',
-            content: 'Just for development purposes, nothing special'
-        },
-        href: requestUUID,
-        thumb: "uuid.gif",
         priority: 60
     },
 
