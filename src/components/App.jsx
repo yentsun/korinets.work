@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import cardsData from '../Card/data';
-import Card from '../Card/Card';
-import './App.css';
+import cardsData from '../data';
+import Card from './Card';
 
 
 export default class App extends Component {
