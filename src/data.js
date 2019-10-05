@@ -82,9 +82,9 @@ export default [
         id: 'lastfm',
         data: null,
         apis: [
-            [lastfmUser.get, []],
-            [lastfmUserArtists.get, []],
-            [lastfmRecent.get, []],
+            [ lastfmUser.get, [ '?method=user.getinfo&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
+            [ lastfmUserArtists.get, [ '?method=user.getTopArtists&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
+            [ lastfmRecent.get, [ '?method=user.getRecentTracks&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&nowplaying=true&format=json' ]],
         ],
         href: "https://www.last.fm/user/yentsun",
         thumb: "lastfm.gif",
