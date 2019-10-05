@@ -1,16 +1,8 @@
 import axios from 'axios';
-import {timeSince} from '../util';
+import { timeSince } from '../util';
 
 
-export const lastfmUser = axios.create({
-    baseURL: 'https://ws.audioscrobbler.com/2.0',
-    params: {
-        method: 'user.getinfo',
-        user: 'yentsun',
-        api_key: 'eb51b2a9770101f794382992bb62457b',
-        format: 'json'
-    }
-});
+export const lastfmUser = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
 
 lastfmUser.interceptors.response.use((res) => {
     const {
@@ -21,15 +13,7 @@ lastfmUser.interceptors.response.use((res) => {
     };
 });
 
-export const lastfmUserArtists = axios.create({
-    baseURL: 'https://ws.audioscrobbler.com/2.0',
-    params: {
-        method: 'user.getTopArtists',
-        user: 'yentsun',
-        api_key: 'eb51b2a9770101f794382992bb62457b',
-        format: 'json'
-    }
-});
+export const lastfmUserArtists = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
 
 lastfmUserArtists.interceptors.response.use((res) => {
     const {'@attr': attr} = res.data.topartists;
@@ -38,16 +22,7 @@ lastfmUserArtists.interceptors.response.use((res) => {
     };
 });
 
-export const lastfmRecent = axios.create({
-    baseURL: 'https://ws.audioscrobbler.com/2.0',
-    params: {
-        method: 'user.getRecentTracks',
-        user: 'yentsun',
-        api_key: 'eb51b2a9770101f794382992bb62457b',
-        nowplaying: true,
-        format: 'json'
-    }
-});
+export const lastfmRecent = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
 
 lastfmRecent.interceptors.response.use((res) => {
     const {artist, name, date, '@attr': attr} = res.data.recenttracks.track[0];
