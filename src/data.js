@@ -39,7 +39,7 @@ export default [
         id: "SO",
         data: null,
         apis: [
-            [so.get, ['/users/216042']]
+            [so.get, ['/users/216042?site=stackoverflow']]
         ],
         href: "https://stackoverflow.com/users/216042/yentsun",
         thumb: "so.gif",
