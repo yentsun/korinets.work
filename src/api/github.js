@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {timeSince} from '../util';
+import { timeSince } from '../util';
 
 
 export const githubUsers = axios.create({
