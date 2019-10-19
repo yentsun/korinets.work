@@ -1,6 +1,6 @@
 [3.11.0]
 --------
-- [ ] Move to hooks
+- [x] Switch to hooks
 - [x] Update moto
 
 
