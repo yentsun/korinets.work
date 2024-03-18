@@ -1,6 +1,11 @@
+[3.12.0]
+--------
+- [x] Switch to hooks
+- [ ] switch to tailwind
+
+
 [3.11.0] - 2019-10-05
 ---------------------
-- [x] Switch to hooks
 - [x] Update moto
 
 

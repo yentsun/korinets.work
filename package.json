@@ -4,14 +4,10 @@
   "private": true,
   "homepage": "https://korinets-name.gitlab.io",
   "dependencies": {
-    "ajv": "^6.10.2",
-    "apollo-boost": "^0.4.4",
-    "axios": "^0.19.0",
-    "graphql": "^14.5.8",
-    "graphql-tag": "^2.10.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "^3.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "swr": "^2.2.5"
   },
   "bugs": {
     "url": "https://gitlab.com/korinets-name/korinets-name.gitlab.io/issues"
