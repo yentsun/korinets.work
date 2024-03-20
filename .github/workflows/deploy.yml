@@ -1,9 +1,9 @@
 name: Deploy to Ali OSS
 
 on:
-  push:
-    branches:
-        - develop
+    push:
+      branches:
+          - develop
 
 jobs:
     build:
@@ -17,13 +17,16 @@ jobs:
             - name: Build
               run: npm run build
 
-    upload:
-        uses: wangsijie/static-deploy-tool/action.yml@v1
-        with:
-            oss-ak: ${{ secrets.OSS_AK }}
-            oss-sk: ${{ secrets.OSS_SK }}
-            oss-region: ${{ secrets.OSS_REGION }}
-            oss-bucket: ${{ secrets.OSS_BUCKET }}
-            oss-endpoint: oss-accelerate.aliyuncs.com
-            local-path: build
-            remote-path: static-deploy-tool-test/action-sync
+            - name: Install static-deploy-tool
+              shell: bash
+              run: npm i -g static-deploy-tool
+
+            - name: Sync
+              shell: bash
+              run: static-deploy-tool sync "build" "static-deploy-tool-test/action-sync"
+              env:
+                  OSS_AK: ${{ secrets.OSS_AK }}
+                  OSS_SK: ${{ secrets.OSS_SK }}
+                  OSS_REGION: ${{ secrets.OSS_REGION }}
+                  OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+                  OSS_ENDPOINT: oss-accelerate.aliyuncs.com
