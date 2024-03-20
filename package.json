@@ -2,7 +2,7 @@
   "name": "front",
   "version": "3.12.0",
   "private": true,
-  "homepage": "https://korinets-name.gitlab.io",
+  "homepage": "https://korinets.work",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,0 +1,29 @@
+name: Deploy to Ali OSS
+
+on:
+  push:
+    branches:
+        - develop
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Version
+              run: git describe --always >> "$npm_package_version"
+
+            - name: Build
+              run: npm run build
+
+    upload:
+        uses: wangsijie/static-deploy-tool@v1
+        with:
+            oss-ak: ${{ secrets.OSS_AK }}
+            oss-sk: ${{ secrets.OSS_SK }}
+            oss-region: ${{ secrets.OSS_REGION }}
+            oss-bucket: ${{ secrets.OSS_BUCKET }}
+            oss-endpoint: oss-accelerate.aliyuncs.com
+            local-path: build
+            remote-path: static-deploy-tool-test/action-sync
