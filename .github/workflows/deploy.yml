@@ -18,7 +18,7 @@ jobs:
               run: npm run build
 
     upload:
-        uses: wangsijie/static-deploy-tool@v1
+        uses: wangsijie/static-deploy-tool/action.yml@v1
         with:
             oss-ak: ${{ secrets.OSS_AK }}
             oss-sk: ${{ secrets.OSS_SK }}
