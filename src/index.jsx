@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Base from './components/Base';
-import registerServiceWorker from './registerServiceWorker';
+import { createRoot } from 'react-dom/client';
+import Root from './components/Root';
+import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<Base />, document.getElementById('root'));
-registerServiceWorker();
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(<React.StrictMode>
+    <Root />
+</React.StrictMode>);
+
+serviceWorker.unregister();
