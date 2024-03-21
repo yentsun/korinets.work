@@ -17,7 +17,9 @@ jobs:
                   echo "CURRENT_VERSION=$version" >> $GITHUB_ENV
 
             - name: Build
-              run: npm run build
+              run: |
+                  npm ci
+                  npm run build
 
             - name: Install static-deploy-tool
               shell: bash
