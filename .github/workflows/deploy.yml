@@ -9,7 +9,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Get version
               run: |
@@ -22,11 +22,9 @@ jobs:
                   npm run build
 
             - name: Install static-deploy-tool
-              shell: bash
               run: npm i -g static-deploy-tool
 
             - name: Sync
-              shell: bash
               run: static-deploy-tool sync "build" "static-deploy-tool-test/action-sync"
               env:
                   OSS_AK: ${{ secrets.OSS_AK }}
