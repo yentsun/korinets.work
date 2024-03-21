@@ -23,7 +23,7 @@ jobs:
               run: npm i -g static-deploy-tool
 
             - name: Sync
-              run: static-deploy-tool sync "build" "static-deploy-tool-test/action-sync"
+              run: static-deploy-tool sync "build" /
               env:
                   OSS_AK: ${{ secrets.OSS_AK }}
                   OSS_SK: ${{ secrets.OSS_SK }}
