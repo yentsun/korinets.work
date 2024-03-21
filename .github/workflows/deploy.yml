@@ -11,8 +11,10 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: Version
-              run: echo "LATEST_TAG=$(git describe --tag)" >> $GITHUB_ENV
+            - name: Get version
+              run: |
+                  version=$(node -p "require('./package.json').version")
+                  echo "CURRENT_VERSION=$version" >> $GITHUB_ENV
 
             - name: Build
               run: npm run build
