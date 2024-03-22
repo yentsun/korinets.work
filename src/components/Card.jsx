@@ -2,26 +2,23 @@ import React from 'react';
 import useFetchData from '../hooks/useFetchData';
 
 
-export default function Card({ href, thumb, apis, data: staticData }) {
+export default function Card({ href, thumb, major, minor, content, isLoading }) {
 
-    const link = (typeof href === "string") ? href : null;
-    const clickHandler = (typeof href === "function") ? href : null;
-    const data = useFetchData({ apis, staticData });
+    return <div className="card" onClick={ () => window.location = href }>
 
-    return data === null ? (<div className="card"><h1>Loading...</h1></div>) : (
-        <div>
-            <a href={ link } onClick={ clickHandler } className="card">
-                <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
-                { data !== false ?
-                    <article>
-                        <h1>{data.major}</h1>
-                        <span>{data.minor}</span>
-                        <p>{data.content}</p>
-                    </article>
-                    :
-                    <article><h1>No data!</h1></article>
-                }
-            </a>
-        </div>
-    );
+        { isLoading &&
+        <h1>Loading...</h1> }
+
+        <div className="thumb" style={ { backgroundImage: `url(${ thumb })` } }/>
+
+        { ! isLoading && <>
+        <article>
+            <h1>{ major }</h1>
+            <span>{ minor }</span>
+            <p>{ content }</p>
+        </article>
+
+        </> }
+    </div>
+
 }
