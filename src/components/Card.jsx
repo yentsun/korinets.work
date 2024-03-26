@@ -4,7 +4,9 @@ import useFetchData from '../hooks/useFetchData';
 
 export default function Card({ href, thumb, major, minor, content, isLoading }) {
 
-    return <div className="card" onClick={ () => window.location = href }>
+    const clickable = Boolean(href);  // for later use in tailwind classes
+
+    return <div className="card" onClick={ clickable ? () => window.location = href : ()=>{} }>
 
         { isLoading &&
         <h1>Loading...</h1> }

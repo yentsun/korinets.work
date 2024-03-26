@@ -6,7 +6,7 @@ export default function GitHub() {
 
     const { yentsun, lastEvent } = useGithub();
 
-    return <Card isLoading={ ! yentsun } thumb="github.gif"
+    return <Card isLoading={ ! yentsun } thumb="github.gif" href="https://github.com/yentsun"
                  major={`repos: ${yentsun?.public_repos}` }
                  minor={ `followers: ${yentsun?.followers}` }
                  content={ lastEvent
