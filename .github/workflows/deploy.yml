@@ -32,4 +32,4 @@ jobs:
               run: aliyun oss cp ./build oss://yt-germ-bucket/ -r -u -e oss-eu-central-1.aliyuncs.com
 
             - name: Refresh Cache
-              run: aliyun cdn RefreshObjectCaches
+              run: aliyun cdn RefreshObjectCaches --region ${{vars.ALICLOUD_REGION_ID}}
