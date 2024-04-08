@@ -20,7 +20,7 @@ jobs:
                   version=$(node -p "require('./package.json').version")
                   REACT_APP_VERSION=$version npm run build
 
-            - name: Upload files via CLI
+            - name: Install CLI
               uses: jerray/setup-aliyun-cli-action@v1.0.0
               with:
                 aliyun-cli-version: '3.0.165'
@@ -28,4 +28,6 @@ jobs:
                 access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
                 access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
                 region: ${{ vars.OSS_REGION }}
+
+            - name: Upload files via CLI
               run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
