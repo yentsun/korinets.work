@@ -30,3 +30,6 @@ jobs:
 
             - name: Upload build
               run: aliyun oss cp ./build oss://yt-germ-bucket/ -r -u -e oss-eu-central-1.aliyuncs.com
+
+            - name: Refresh Cache
+              run: aliyun cdn RefreshObjectCaches
