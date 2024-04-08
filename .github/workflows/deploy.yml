@@ -23,7 +23,7 @@ jobs:
             - name: Install CLI
               run: |
                   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh)"
-                ls -a
+                  ls -a
 
             - name: Upload build
               run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
