@@ -9,24 +9,23 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - name: Checkout
+              uses: actions/checkout@v4
 
             - name: Install
               run: npm ci
 
-            - name: Build
+            - name: Build application
               run: |
                   version=$(node -p "require('./package.json').version")
                   REACT_APP_VERSION=$version npm run build
 
-            - name: Install static-deploy-tool
-              run: npm i -g static-deploy-tool
-
-            - name: Sync
-              run: static-deploy-tool sync "build" /
-              env:
-                  OSS_AK: ${{ secrets.OSS_AK }}
-                  OSS_SK: ${{ secrets.OSS_SK }}
-                  OSS_REGION: ${{ vars.OSS_REGION }}
-                  OSS_BUCKET: ${{ vars.OSS_BUCKET }}
-                  OSS_ENDPOINT: oss-accelerate.aliyuncs.com
+            - name: Upload files via CLI
+              uses: jerray/setup-aliyun-cli-action@v1.0.0
+              with:
+                aliyun-cli-version: '3.0.165'
+                mode: AK
+                access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+                access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+                region: ${{ vars.OSS_REGION }}
+              run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
