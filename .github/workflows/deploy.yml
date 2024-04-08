@@ -29,4 +29,4 @@ jobs:
               run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh)"
 
             - name: Upload build
-              run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
+              run: aliyun oss cp ./build oss://yt-germ-bucket/ -r -u
