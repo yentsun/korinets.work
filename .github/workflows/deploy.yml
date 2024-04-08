@@ -1,5 +1,10 @@
 name: Deploy
 
+env:
+    ALICLOUD_ACCESS_KEY_ID: ${{secrets.ALICLOUD_ACCESS_KEY_ID}}
+    ALICLOUD_ACCESS_KEY_SECRET: ${{secrets.ALICLOUD_ACCESS_KEY_SECRET}}
+    ALICLOUD_REGION_ID: ${{variables.ALICLOUD_REGION_ID}}
+
 on:
     push:
       branches:
@@ -21,8 +26,7 @@ jobs:
                   REACT_APP_VERSION=$version npm run build
 
             - name: Install CLI
-              run: |
-                  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh)"
+              run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh)"
 
             - name: Upload build
               run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
