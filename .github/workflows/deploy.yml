@@ -1,4 +1,4 @@
-name: Deploy to Ali OSS
+name: Deploy
 
 on:
     push:
@@ -12,7 +12,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-            - name: Install
+            - name: Install application
               run: npm ci
 
             - name: Build application
@@ -21,13 +21,9 @@ jobs:
                   REACT_APP_VERSION=$version npm run build
 
             - name: Install CLI
-              uses: jerray/setup-aliyun-cli-action@v1.0.0
-              with:
-                aliyun-cli-version: '3.0.165'
-                mode: AK
-                access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-                access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-                region: ${{ vars.OSS_REGION }}
+              run: |
+                  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aliyun/aliyun-cli/HEAD/install.sh)"
+                ls -a
 
-            - name: Upload files via CLI
+            - name: Upload build
               run: aliyun oss cp ./build oss://yt-germ-bucket -r -u
