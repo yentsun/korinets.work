@@ -1,34 +1,13 @@
-import useGithub from '../../hooks/useGithub';
+import Card from '../Card';
+import useGitLab from '../../hooks/useGitLab';
 
 
-export default function GitHub() {
+export default function GitLab() {
 
-    const { yentsun, lastEvent } = useGithub();
+    const { major, minor, content, isLoading } = useGitLab();
 
-    return <div className="card" onClick={ () => window.location = 'https://github.com/yentsun' }>
+    console.log({ content })
 
-        { ! yentsun &&
-        <h1>Loading...</h1> }
-
-        <div className="thumb" style={{ backgroundImage: 'url(github.gif)' }}/>
-
-        <article>
-            { yentsun && <>
-
-            <h1>repos: { yentsun.public_repos }</h1>
-
-            <span>followers: { yentsun.followers }</span>
-
-            { lastEvent &&
-            <p>
-                { lastEvent.name }:
-                [{ lastEvent.type }] { lastEvent.text }
-                ({ lastEvent.createdAgo } ago)
-            </p> }
-
-            </> }
-
-        </article>
-
-    </div>
+    return <Card isLoading={ isLoading } thumb="gitlab.gif" href="https://gitlab.com/mkorinets"
+                 major={ major } minor={ minor } content={ content || '...' } />
 }
