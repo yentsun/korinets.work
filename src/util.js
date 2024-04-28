@@ -29,6 +29,8 @@ export const timeSince = (date) => {
 
 export const average = (values) => {
 
+    if (!  values) return;
+
     const sum = values.reduce((a, b) => b += a);
     return sum / values.length;
 };

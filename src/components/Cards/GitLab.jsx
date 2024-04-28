@@ -6,8 +6,6 @@ export default function GitLab() {
 
     const { major, minor, content, isLoading } = useGitLab();
 
-    console.log({ content })
-
     return <Card isLoading={ isLoading } thumb="gitlab.gif" href="https://gitlab.com/mkorinets"
                  major={ major } minor={ minor } content={ content || '...' } />
 }

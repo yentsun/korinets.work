@@ -5,6 +5,7 @@ import Bio from './Cards/Bio';
 import Email from './Cards/Email';
 import StackOverflow from './Cards/StackOverflow';
 import GitLab from './Cards/GitLab';
+import NPM from './Cards/NPM';
 
 
 export default function Root() {
@@ -13,6 +14,7 @@ export default function Root() {
         <Bio />
         <GitHub />
         <GitLab />
+        <NPM />
         <StackOverflow />
         <Email />
     </div>

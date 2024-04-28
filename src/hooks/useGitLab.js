@@ -13,13 +13,15 @@ export default function useGitLab() {
 
         if (! events) return;
 
-        const {target_type, action_name, target_iid, target_title, push_data, note, created_at} = events[0];
+
+        const { target_type, action_name, target_iid, target_title, push_data, note, created_at } = events[0];
         let actionType;
         let actionString;
+
         switch (target_type) {
             case null:
                 actionType = 'push';
-                const {commit_to, commit_title} = push_data;
+                const { commit_to, commit_title } = push_data;
                 actionString = `#${commit_to.slice(0, 7)} ${commit_title}`;
                 break;
             case 'Issue':
@@ -27,7 +29,7 @@ export default function useGitLab() {
                 actionString = `#${target_iid} ${target_title}`;
                 break;
             case 'Note':
-                const {body, noteable_iid} = note;
+                const { body, noteable_iid } = note;
                 actionType = `note`;
                 actionString = `#${noteable_iid}: ${body}`;
                 break;
