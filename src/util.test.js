@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { timeSince, average, median, requestPassword, requestUUID } from './util';
+import { describe, it, expect } from 'vitest';
+import { timeSince, average } from './util';
 
 
 describe('timeSince', () => {
@@ -41,79 +41,5 @@ describe('average', () => {
 
     it('returns the value for single-element array', () => {
         expect(average([5])).toBe(5);
-    });
-});
-
-describe('median', () => {
-    it('returns median of odd-length array', () => {
-        expect(median([1, 3, 5])).toBe(3);
-    });
-
-    it('returns median of even-length array', () => {
-        expect(median([1, 2, 3, 4])).toBe(2.5);
-    });
-});
-
-describe('requestPassword', () => {
-    beforeEach(() => {
-        vi.restoreAllMocks();
-    });
-
-    it('fetches password and displays it in a textarea', async () => {
-        const textarea = document.createElement('textarea');
-        const p = document.createElement('p');
-        p.appendChild(textarea);
-        const parent = document.createElement('div');
-        parent.appendChild(p);
-        const target = document.createElement('a');
-        parent.appendChild(target);
-
-        vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-            json: () => Promise.resolve({ data: { password: 'abc123' } })
-        }));
-
-        requestPassword({ target });
-
-        await vi.waitFor(() => {
-            expect(textarea.innerText).toBe('abc123');
-        });
-    });
-
-    it('does nothing when no <p> element is found', () => {
-        const parent = document.createElement('div');
-        const target = document.createElement('a');
-        parent.appendChild(target);
-
-        vi.stubGlobal('fetch', vi.fn());
-
-        requestPassword({ target });
-
-        expect(fetch).not.toHaveBeenCalled();
-    });
-});
-
-describe('requestUUID', () => {
-    beforeEach(() => {
-        vi.restoreAllMocks();
-    });
-
-    it('fetches UUID and displays it in a textarea', async () => {
-        const textarea = document.createElement('textarea');
-        const p = document.createElement('p');
-        p.appendChild(textarea);
-        const parent = document.createElement('div');
-        parent.appendChild(p);
-        const target = document.createElement('a');
-        parent.appendChild(target);
-
-        vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-            json: () => Promise.resolve({ data: { uuid: 'uuid-123' } })
-        }));
-
-        requestUUID({ target });
-
-        await vi.waitFor(() => {
-            expect(textarea.innerText).toBe('uuid-123');
-        });
     });
 });

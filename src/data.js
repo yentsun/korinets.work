@@ -2,7 +2,7 @@ import { fetchStackOverflow } from './api/so';
 import { fetchGithubUser, fetchGithubEvents } from './api/github';
 import { fetchLastfmUser, fetchLastfmRecent, fetchLastfmUserArtists } from './api/lastfm';
 import { fetchNpmRegistry } from './api/npm';
-import { requestPassword, timeSince } from './util';
+import { timeSince } from './util';
 
 
 export default [
@@ -91,20 +91,7 @@ export default [
         priority: 60
     },
 
-    {
-        id: 'password',
-        data: {
-            major: 'Generate password',
-            minor: '20 chars long (very strong)',
-            content: 'Lowercase, uppercase, numbers, special chars, some hieroglyphs.' +
-                     " Well tested in real life and reasonably secure."
-        },
-        href: requestPassword,
-        thumb: "password.gif",
-        priority: 60
-    },
-
-    {
+{
         id: 'venture',
         data: {
             major: 'Venture API',
