@@ -1,26 +1,19 @@
-import { useState } from 'react';
 import useFetchData from '../hooks/useFetchData';
 import Modal from './Modal';
 
 
-export default function Card({ href, thumb, apis, data: staticData }) {
+export default function Card({ id, href, thumb, apis, data: staticData, isOpen, onOpen, onClose }) {
 
-    const [showModal, setShowModal] = useState(false);
-    const clickHandler = (typeof href === "function") ? href : null;
     const data = useFetchData({ apis, staticData });
 
     const handleClick = (e) => {
-        if (clickHandler) {
-            clickHandler(e);
-            return;
-        }
         e.preventDefault();
-        setShowModal(true);
+        onOpen(id);
     };
 
     return data === null ? (<div className="card"><h1>Loading...</h1></div>) : (
         <div>
-            <a href="#" onClick={handleClick} className="card">
+            <a href={`#${id}`} onClick={handleClick} className="card">
                 <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
                 { data !== false ?
                     <article>
@@ -32,12 +25,12 @@ export default function Card({ href, thumb, apis, data: staticData }) {
                     <article><h1>No data!</h1></article>
                 }
             </a>
-            {showModal && data && (
+            {isOpen && data && (
                 <Modal
                     data={data}
                     thumb={thumb}
                     href={href}
-                    onClose={() => setShowModal(false)}
+                    onClose={onClose}
                 />
             )}
         </div>
