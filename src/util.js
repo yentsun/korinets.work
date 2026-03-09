@@ -1,7 +1,3 @@
-import ApolloClient from "apollo-boost";
-import gql from "graphql-tag";
-
-
 export const timeSince = (date) => {
 
     const seconds = Math.floor((new Date() - date) / 1000);
@@ -49,17 +45,19 @@ export const median = (values) => {
 
 export const requestPassword = (e) => {
 
-    const client = new ApolloClient({
-        uri: process.env.NODE_ENV === 'production'
-            ? 'https://back.korinets.name/graphql'
-            : "http://localhost:8000/graphql"
-    });
+    const apiUrl = import.meta.env.PROD
+        ? 'https://back.korinets.name/graphql'
+        : 'http://localhost:8000/graphql';
 
     let p = e.target.parentElement.getElementsByTagName('p')[0];
     if (p) {
         console.log('requesting password...');
-        client
-        .query({query: gql`{password}`})
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: '{password}' })
+        })
+        .then(res => res.json())
         .then(result => {
             p.innerText = '';
             const textArea = p.getElementsByTagName('textarea');
@@ -80,17 +78,19 @@ export const requestPassword = (e) => {
 
 export const requestUUID = (e) => {
 
-    const client = new ApolloClient({
-        uri: process.env.NODE_ENV === 'production'
-            ? 'https://back.korinets.name/graphql'
-            : "http://localhost:8000/graphql"
-    });
+    const apiUrl = import.meta.env.PROD
+        ? 'https://back.korinets.name/graphql'
+        : 'http://localhost:8000/graphql';
 
     let p = e.target.parentElement.getElementsByTagName('p')[0];
     if (p) {
         console.log('requesting UUID...');
-        client
-        .query({query: gql`{uuid}`})
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: '{uuid}' })
+        })
+        .then(res => res.json())
         .then(result => {
             p.innerText = '';
             const textArea = p.getElementsByTagName('textarea');

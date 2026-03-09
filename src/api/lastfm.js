@@ -1,39 +1,38 @@
-import axios from 'axios';
 import { timeSince } from '../util';
 
 
-export const lastfmUser = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
+const LASTFM_API = 'https://ws.audioscrobbler.com/2.0';
 
-lastfmUser.interceptors.response.use((res) => {
-    const {
-        playcount
-    } = res.data.user;
+export async function fetchLastfmUser(path) {
+    const res = await fetch(`${LASTFM_API}${path}`);
+    const data = await res.json();
+    const { playcount } = data.user;
     return {
         major: `Tracks: ${playcount}`,
     };
-});
+}
 
-export const lastfmUserArtists = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
-
-lastfmUserArtists.interceptors.response.use((res) => {
-    const {'@attr': attr} = res.data.topartists;
+export async function fetchLastfmUserArtists(path) {
+    const res = await fetch(`${LASTFM_API}${path}`);
+    const data = await res.json();
+    const { '@attr': attr } = data.topartists;
     return {
         minor: `Artists: ${attr.total}`,
     };
-});
+}
 
-export const lastfmRecent = axios.create({ baseURL: 'https://ws.audioscrobbler.com/2.0' });
-
-lastfmRecent.interceptors.response.use((res) => {
-    const {artist, name, date, '@attr': attr} = res.data.recenttracks.track[0];
+export async function fetchLastfmRecent(path) {
+    const res = await fetch(`${LASTFM_API}${path}`);
+    const data = await res.json();
+    const { artist, name, date, '@attr': attr } = data.recenttracks.track[0];
     let when;
     if (date) {
         const playedAt = new Date(parseInt(date.uts, 10) * 1000);
-        when = `${timeSince(new Date(playedAt))} ago`
+        when = `${timeSince(new Date(playedAt))} ago`;
     } else if (attr && attr.nowplaying) {
-        when = 'now'
+        when = 'now';
     }
     return {
         content: `Playing: ${artist['#text']} - ${name} (${when})`
     };
-});
+}

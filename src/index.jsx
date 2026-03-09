@@ -1,9 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import Base from './components/Base';
-import registerServiceWorker from './registerServiceWorker';
 
 
-ReactDOM.render(<Base />, document.getElementById('root'));
-registerServiceWorker();
+createRoot(document.getElementById('root')).render(<Base />);

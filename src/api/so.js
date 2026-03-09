@@ -1,33 +1,26 @@
-import axios from 'axios';
-import {timeSince} from '../util';
+import { timeSince } from '../util';
 
 
-const so = axios.create({
-    baseURL: 'https://api.stackexchange.com/2.2',
-    params: {
-        key: 'U4DMV*8nvpm3EOpvf69Rxw((',  // TODO change to real key
-        site: 'stackoverflow'
-    },
-});
+const SO_API = 'https://api.stackexchange.com/2.2';
+const SO_KEY = 'U4DMV*8nvpm3EOpvf69Rxw((';
 
-so.interceptors.response.use((res) => {
+export async function fetchStackOverflow(path) {
+    const url = new URL(`${SO_API}${path}`);
+    url.searchParams.set('key', SO_KEY);
+    url.searchParams.set('site', 'stackoverflow');
+    const res = await fetch(url);
+    const data = await res.json();
     const {
         reputation,
         accept_rate,
         last_access_date,
         reputation_change_month,
-        badge_counts: {
-            bronze,
-            silver,
-            gold
-        }
-    } = res.data.items[0];
+        badge_counts: { bronze, silver, gold }
+    } = data.items[0];
     const lastSeen = new Date(parseInt(last_access_date, 10) * 1000);
     return {
         major: reputation,
-        minor: `🔶️ ${gold}   🔵️ ${silver}   🔴️ ${bronze}`,
+        minor: `🔶️ ${gold}   🔵️ ${silver}   🔴️ ${bronze}`,
         content: `accept rate: ${accept_rate}%; reputation change (month): ${reputation_change_month}; last seen: ${timeSince(lastSeen)} ago`
     };
-});
-
-export default so;
+}

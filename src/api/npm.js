@@ -1,13 +1,12 @@
-import axios from 'axios';
-import {average} from '../util'
+import { average } from '../util';
 
 
-export const npmRegistry = axios.create({
-    baseURL: 'https://registry.npmjs.org/-/v1'
-});
+const NPM_API = 'https://registry.npmjs.org/-/v1';
 
-npmRegistry.interceptors.response.use((res) => {
-    const {total, objects} = res.data;
+export async function fetchNpmRegistry(path) {
+    const res = await fetch(`${NPM_API}${path}`);
+    const data = await res.json();
+    const { total, objects } = data;
     const packagelist = objects.map(o => o.package.name).join(', ');
     const packageScores = objects.map(o => o.score.final);
     return {
@@ -15,4 +14,4 @@ npmRegistry.interceptors.response.use((res) => {
         minor: `avg score: ${average(packageScores).toFixed(3)}`,
         content: packagelist
     };
-});
+}

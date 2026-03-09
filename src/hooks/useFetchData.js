@@ -19,12 +19,7 @@ export default function useFetchData({ apis, staticData=null }) {
             } catch (error) {
 
                 setData(false);
-
-                if (error.response) {
-                    console.error('Error response:', error.response.data);
-                } else {
-                    console.error('Unexpected:', error.message);
-                }
+                console.error('Fetch error:', error.message);
             }
         }
 

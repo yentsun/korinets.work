@@ -1,9 +1,8 @@
-import so from './api/so';
-import {githubUsers, githubEvents} from './api/github';
-import {gitlabUsers, gitlabEvents} from './api/gitlab';
-import {lastfmUser, lastfmRecent, lastfmUserArtists} from './api/lastfm';
-import {npmRegistry} from './api/npm';
-import {requestPassword, timeSince} from './util';
+import { fetchStackOverflow } from './api/so';
+import { fetchGithubUser, fetchGithubEvents } from './api/github';
+import { fetchLastfmUser, fetchLastfmRecent, fetchLastfmUserArtists } from './api/lastfm';
+import { fetchNpmRegistry } from './api/npm';
+import { requestPassword, timeSince } from './util';
 
 
 export default [
@@ -39,29 +38,18 @@ export default [
         id: "SO",
         data: null,
         apis: [
-            [so.get, ['/users/216042?site=stackoverflow']]
+            [fetchStackOverflow, ['/users/216042']]
         ],
         href: "https://stackoverflow.com/users/216042/yentsun",
         thumb: "so.gif",
         priority: 10
     },
-    {
-        id: 'gitlab',
-        data: null,
-        apis: [
-            [gitlabUsers.get, ['?username=mkorinets']],
-            [gitlabEvents.get, ['/mkorinets/events']]
-        ],
-        href: 'https://gitlab.com/mkorinets',
-        thumb: 'gitlab.gif',
-        priority: 71
-    },
-    {
+{
         id: 'github',
         data: null,
         apis: [
-            [githubUsers.get, ['/yentsun']],
-            [githubEvents.get, ['/yentsun/events']]
+            [fetchGithubUser, ['/yentsun']],
+            [fetchGithubEvents, ['/yentsun/events']]
         ],
         href: "https://github.com/yentsun",
         thumb: "github.gif",
@@ -71,7 +59,7 @@ export default [
         id: 'npm',
         data: null,
         apis: [
-            [npmRegistry.get, ['/search?text=maintainer:yentsun']]
+            [fetchNpmRegistry, ['/search?text=maintainer:yentsun']]
         ],
         href: "https://www.npmjs.com/~yentsun",
         thumb: "npm.gif",
@@ -82,9 +70,9 @@ export default [
         id: 'lastfm',
         data: null,
         apis: [
-            [ lastfmUser.get, [ '?method=user.getinfo&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
-            [ lastfmUserArtists.get, [ '?method=user.getTopArtists&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
-            [ lastfmRecent.get, [ '?method=user.getRecentTracks&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&nowplaying=true&format=json' ]],
+            [ fetchLastfmUser, [ '?method=user.getinfo&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
+            [ fetchLastfmUserArtists, [ '?method=user.getTopArtists&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
+            [ fetchLastfmRecent, [ '?method=user.getRecentTracks&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&nowplaying=true&format=json' ]],
         ],
         href: "https://www.last.fm/user/yentsun",
         thumb: "lastfm.gif",
@@ -133,7 +121,7 @@ export default [
     {
         id: 'construction',
         data: {
-            major: process.env.REACT_APP_VERSION,
+            major: import.meta.env.VITE_APP_VERSION,
             minor: 'Under construction',
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the progress.'
