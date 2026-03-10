@@ -112,7 +112,7 @@ export default [
             content: 'LKS-1 Đường 2C, An Viên, Vĩnh Trường, Nha Trang, Khanh Hoa 652510, VN | geraskinai@gmail.com | +84 76 212 3427'
         },
         href: "mailto:geraskinai@gmail.com",
-        thumb: null,
+        thumb: "irina.gif",
         priority: 89
     },
 
