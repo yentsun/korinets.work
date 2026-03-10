@@ -1,5 +1,7 @@
 import React from 'react';
 import useFetchData from '../hooks/useFetchData';
+import Thumb from './Thumb';
+import CardArticle from './CardArticle';
 
 
 export default function Card({ href, thumb, apis, data: staticData }) {
@@ -8,18 +10,17 @@ export default function Card({ href, thumb, apis, data: staticData }) {
     const clickHandler = (typeof href === "function") ? href : null;
     const data = useFetchData({ apis, staticData });
 
-    return data === null ? (<div className="card"><h1>Loading...</h1></div>) : (
+    if (data === null) {
+        return <div className="card"><CardArticle major="Loading..." /></div>;
+    }
+
+    return (
         <div>
             <a href={ link } onClick={ clickHandler } className="card">
-                <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
-                { data !== false ?
-                    <article>
-                        <h1>{data.major}</h1>
-                        <span>{data.minor}</span>
-                        <p>{data.content}</p>
-                    </article>
-                    :
-                    <article><h1>No data!</h1></article>
+                <Thumb src={ thumb } />
+                { data !== false
+                    ? <CardArticle {...data} />
+                    : <CardArticle major="No data!" />
                 }
             </a>
         </div>

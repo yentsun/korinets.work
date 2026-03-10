@@ -1,8 +1,45 @@
+:root {
+    /* Colors */
+    --color-bg: #000000;
+    --color-primary: green;
+    --color-accent: gold;
+    --color-error: red;
+    --color-highlight: yellow;
+    --color-input-bg: rgba(5, 5, 5, 0.91);
+
+    /* Typography */
+    --font-family: 'VT323', monospace;
+    --font-size-heading: 22px;
+    --font-size-body: small;
+    --font-size-label: 12px;
+
+    /* Spacing */
+    --spacing-page: 20px;
+    --spacing-grid-gap: 20px;
+    --spacing-article: 9px;
+
+    /* Dimensions */
+    --card-height: 100px;
+    --thumb-size: 100px;
+    --card-min-width: 320px;
+    --textarea-width: 250px;
+
+    /* Borders */
+    --border-dashed: 1px dashed;
+
+    /* Breakpoints (used in media queries, documented here) */
+    /* --bp-tablet: 650px; */
+    /* --bp-desktop: 1200px; */
+
+    /* Transition */
+    --transition-fast: all .1s ease-in;
+}
+
 html {
-    background: #000000;
-    font-family: 'VT323', monospace;
+    background: var(--color-bg);
+    font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
-    padding: 20px 0;
+    padding: var(--spacing-page) 0;
 }
 
 .band {
@@ -10,8 +47,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 20px;
-
+    grid-gap: var(--spacing-grid-gap);
 }
 
 @media only screen and (min-width: 650px) {
@@ -27,59 +63,54 @@ html {
 }
 
 .card {
-    min-width: 320px;
-    height: 100px;
-    background: black;
-    border-bottom: 1px dashed green;
+    min-width: var(--card-min-width);
+    height: var(--card-height);
+    background: var(--color-bg);
+    border-bottom: var(--border-dashed) var(--color-primary);
     display: grid;
     text-decoration: none;
-    color: green;
+    color: var(--color-primary);
     position: relative;
-    font-size: small;
+    font-size: var(--font-size-body);
     top: 0;
-    transition: all .1s ease-in;
+    transition: var(--transition-fast);
 }
 
 .card:hover {
     top: -2px;
-    color: gold;
-    border-bottom: 1px dashed gold;
+    color: var(--color-accent);
+    border-bottom: var(--border-dashed) var(--color-accent);
 }
 
 .card .thumb {
     grid-column: 1 / 2;
     grid-row: 1;
-    height: 100px;
-    width: 100px;
+    height: var(--thumb-size);
+    width: var(--thumb-size);
     background-size: cover;
     background-position: center center;
-    background-color: green;
+    background-color: var(--color-primary);
 }
 
 .card:hover .thumb {
-    background-color: gold;
+    background-color: var(--color-accent);
 }
 
 .card article {
     grid-row: 1;
     grid-column: 2;
-    padding: 0 0 0 9px;
+    padding: 0 0 0 var(--spacing-article);
     justify-content: space-between;
     flex-direction: row;
-
 }
 
-.card p {
-}
-
-/* typography */
 .card h1 {
-    font-size: 22px;
+    font-size: var(--font-size-heading);
     margin: 0 0 3px 0;
 }
 
 .card span {
-    font-size: 12px;
+    font-size: var(--font-size-label);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -87,8 +118,8 @@ html {
 }
 
 .card textarea {
-    background-color: rgba(5, 5, 5, 0.91);
-    border: 1px dashed yellow;
-    width: 250px;
-    color: red;
+    background-color: var(--color-input-bg);
+    border: var(--border-dashed) var(--color-highlight);
+    width: var(--textarea-width);
+    color: var(--color-error);
 }

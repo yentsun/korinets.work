@@ -2,6 +2,11 @@ import ApolloClient from "apollo-boost";
 import gql from "graphql-tag";
 
 
+const graphqlUri = process.env.NODE_ENV === 'production'
+    ? 'https://back.korinets.name/graphql'
+    : "http://localhost:8000/graphql";
+
+
 export const timeSince = (date) => {
 
     const seconds = Math.floor((new Date() - date) / 1000);
@@ -47,64 +52,34 @@ export const median = (values) => {
         (values[half-1] + values[half]) / 2.0;
 };
 
-export const requestPassword = (e) => {
 
-    const client = new ApolloClient({
-        uri: process.env.NODE_ENV === 'production'
-            ? 'https://back.korinets.name/graphql'
-            : "http://localhost:8000/graphql"
-    });
+function requestGraphqlValue(fieldName) {
+    return (e) => {
+        const client = new ApolloClient({ uri: graphqlUri });
 
-    let p = e.target.parentElement.getElementsByTagName('p')[0];
-    if (p) {
-        console.log('requesting password...');
-        client
-        .query({query: gql`{password}`})
-        .then(result => {
-            p.innerText = '';
-            const textArea = p.getElementsByTagName('textarea');
-            const passwordHolder = textArea.length
-                ? textArea[0]
-                : document.createElement("textarea");
-            p.appendChild(passwordHolder);
-            passwordHolder.innerText = `${result.data.password}`;
-            passwordHolder.addEventListener('focus', () => {
-                passwordHolder.select();
-                document.execCommand('copy');
-                console.log('copied');
-            }, false );
-            console.log('done', result.data.password);
-        });
-    }
-};
+        let p = e.target.parentElement.getElementsByTagName('p')[0];
+        if (p) {
+            console.log(`requesting ${fieldName}...`);
+            client
+            .query({query: gql`{${fieldName}}`})
+            .then(result => {
+                p.innerText = '';
+                const textArea = p.getElementsByTagName('textarea');
+                const valueHolder = textArea.length
+                    ? textArea[0]
+                    : document.createElement("textarea");
+                p.appendChild(valueHolder);
+                valueHolder.innerText = `${result.data[fieldName]}`;
+                valueHolder.addEventListener('focus', () => {
+                    valueHolder.select();
+                    document.execCommand('copy');
+                    console.log('copied');
+                }, false );
+                console.log('done', result.data[fieldName]);
+            });
+        }
+    };
+}
 
-export const requestUUID = (e) => {
-
-    const client = new ApolloClient({
-        uri: process.env.NODE_ENV === 'production'
-            ? 'https://back.korinets.name/graphql'
-            : "http://localhost:8000/graphql"
-    });
-
-    let p = e.target.parentElement.getElementsByTagName('p')[0];
-    if (p) {
-        console.log('requesting UUID...');
-        client
-        .query({query: gql`{uuid}`})
-        .then(result => {
-            p.innerText = '';
-            const textArea = p.getElementsByTagName('textarea');
-            const passwordHolder = textArea.length
-                ? textArea[0]
-                : document.createElement("textarea");
-            p.appendChild(passwordHolder);
-            passwordHolder.innerText = `${result.data.uuid}`;
-            passwordHolder.addEventListener('focus', () => {
-                passwordHolder.select();
-                document.execCommand('copy');
-                console.log('copied');
-            }, false );
-            console.log('done', result.data.uuid);
-        });
-    }
-};
+export const requestPassword = requestGraphqlValue('password');
+export const requestUUID = requestGraphqlValue('uuid');
