@@ -22,7 +22,7 @@ export default function Modal({ data, thumb, href, onClose }) {
                     <span>{data.minor}</span>
                     <p>{data.content}</p>
                 </article>
-                {link && <LinkButton href={link} />}
+                {link && <LinkButton href={link}>{link.startsWith('mailto:') ? 'Write email →' : 'Follow link →'}</LinkButton>}
             </div>
         </div>
     );
