@@ -2,9 +2,10 @@ import { timeSince } from '../util';
 
 
 const LASTFM_API = 'https://ws.audioscrobbler.com/2.0';
+const LASTFM_KEY = import.meta.env.VITE_LASTFM_KEY;
 
 export async function fetchLastfmUser(path) {
-    const res = await fetch(`${LASTFM_API}${path}`);
+    const res = await fetch(`${LASTFM_API}${path}&api_key=${LASTFM_KEY}`);
     const data = await res.json();
     if (!data.user) return { major: 'N/A' };
     const { playcount } = data.user;
@@ -14,7 +15,7 @@ export async function fetchLastfmUser(path) {
 }
 
 export async function fetchLastfmUserArtists(path) {
-    const res = await fetch(`${LASTFM_API}${path}`);
+    const res = await fetch(`${LASTFM_API}${path}&api_key=${LASTFM_KEY}`);
     const data = await res.json();
     if (!data.topartists) return { minor: '' };
     const { '@attr': attr } = data.topartists;
@@ -24,7 +25,7 @@ export async function fetchLastfmUserArtists(path) {
 }
 
 export async function fetchLastfmRecent(path) {
-    const res = await fetch(`${LASTFM_API}${path}`);
+    const res = await fetch(`${LASTFM_API}${path}&api_key=${LASTFM_KEY}`);
     const data = await res.json();
     if (!data.recenttracks || !data.recenttracks.track || !data.recenttracks.track.length) {
         return { content: 'No recent tracks' };

@@ -2,7 +2,7 @@ import { timeSince } from '../util';
 
 
 const SO_API = 'https://api.stackexchange.com/2.2';
-const SO_KEY = 'U4DMV*8nvpm3EOpvf69Rxw((';
+const SO_KEY = import.meta.env.VITE_SO_KEY;
 
 export async function fetchStackOverflow(path) {
     const url = new URL(`${SO_API}${path}`);

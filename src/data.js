@@ -57,9 +57,9 @@ export default [
         id: 'lastfm',
         data: null,
         apis: [
-            [ fetchLastfmUser, [ '?method=user.getinfo&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
-            [ fetchLastfmUserArtists, [ '?method=user.getTopArtists&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&format=json' ]],
-            [ fetchLastfmRecent, [ '?method=user.getRecentTracks&user=yentsun&api_key=eb51b2a9770101f794382992bb62457b&nowplaying=true&format=json' ]],
+            [ fetchLastfmUser, [ '?method=user.getinfo&user=yentsun&format=json' ]],
+            [ fetchLastfmUserArtists, [ '?method=user.getTopArtists&user=yentsun&format=json' ]],
+            [ fetchLastfmRecent, [ '?method=user.getRecentTracks&user=yentsun&nowplaying=true&format=json' ]],
         ],
         href: "https://www.last.fm/user/yentsun",
         thumb: "lastfm.gif",
@@ -208,7 +208,7 @@ export default [
             content: 'This website is being constantly developed. I add new cards, ' +
                      'backend APIs, etc. Click to see the progress.'
         },
-        href: 'https://gitlab.com/groups/korinets-name/-/boards?=',
+        href: 'https://github.com/yentsun/korinets.work',
         thumb: "construction.gif",
         priority: 0
     }
