@@ -16,7 +16,7 @@ export default function Modal({ data, thumb, href, onClose }) {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
                 <button className="modal-close" onClick={onClose}>x</button>
-                <div className="modal-thumb" style={{backgroundImage: `url(${thumb})`}}/>
+                {thumb && <div className="modal-thumb" style={{backgroundImage: `url(${thumb})`}}/>}
                 <article>
                     <h1>{data.major}</h1>
                     <span>{data.minor}</span>

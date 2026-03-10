@@ -13,8 +13,18 @@ export default function useFetchData({ apis, staticData=null }) {
                 const reqList = apis.map(([ func, args ]) => {
                     return func(...args);
                 });
-                const dataSets = await Promise.all(reqList);
-                setData(Object.assign(...dataSets));
+                const results = await Promise.allSettled(reqList);
+                const fulfilled = results
+                    .filter(r => r.status === 'fulfilled')
+                    .map(r => r.value);
+                results
+                    .filter(r => r.status === 'rejected')
+                    .forEach(r => console.warn('API call failed:', r.reason?.message));
+                if (fulfilled.length === 0) {
+                    setData(false);
+                } else {
+                    setData(Object.assign({}, ...fulfilled));
+                }
 
             } catch (error) {
 

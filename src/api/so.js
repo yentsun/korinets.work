@@ -10,6 +10,7 @@ export async function fetchStackOverflow(path) {
     url.searchParams.set('site', 'stackoverflow');
     const res = await fetch(url);
     const data = await res.json();
+    if (!data.items || !data.items.length) return { major: 'N/A', minor: '', content: 'No data available' };
     const {
         reputation,
         accept_rate,

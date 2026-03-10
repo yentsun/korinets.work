@@ -14,7 +14,7 @@ export default function Card({ id, href, thumb, apis, data: staticData, isOpen, 
     return data === null ? (<div className="card"><h1>Loading...</h1></div>) : (
         <div>
             <a href={`#${id}`} onClick={handleClick} className="card">
-                <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>
+                {thumb && <div className="thumb" style={{backgroundImage: `url(${thumb})`}}/>}
                 { data !== false ?
                     <article>
                         <h1>{data.major}</h1>
